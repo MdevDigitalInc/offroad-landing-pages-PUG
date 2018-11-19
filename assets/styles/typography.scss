@@ -1,0 +1,163 @@
+/*-------------------------------------
+ *	TYPOGRAPHY
+/-------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:400,700');
+
+/* Main */
+body {
+  font-family: $main-font;
+  font-size: 16px;
+  color: $ora-white;
+}
+
+/* Headings & Body Copy */
+
+/* Reset Fonts */
+
+/* Disabled because the new line rule was not intended for these cases */
+/* stylelint-disable */
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6, {
+  font-family: $spec-font;
+  font-weight: 400;
+  color: inherit;
+}
+
+// Responsive Font Size Maps
+$p-font-sizes: (
+  null  : vw-phone(14),
+  $tablet-up: vw-tablet(16),
+  $laptop-up: vw-laptop(20),
+  $desktop-up: vw-desktop(20)
+);
+
+$h1-font-sizes: (
+  null  : vw-phone(28),
+  $tablet-up: vw-tablet(36),
+  $laptop-up: vw-laptop(48),
+  $desktop-up: vw-desktop(48)
+);
+
+$h2-font-sizes: (
+  null  : vw-phone(20),
+  $tablet-up: vw-tablet(24),
+  $laptop-up: vw-laptop(24),
+  $desktop-up: vw-desktop(24)
+);
+
+$h3-font-sizes: (
+  null  : vw-phone(20),
+  $tablet-up: vw-tablet(20.5),
+  $laptop-up: vw-laptop(47.5),
+  $desktop-up: vw-desktop(47.5)
+);
+
+$h4-font-sizes: (
+  null  : vw-phone(14),
+  $tablet-up: vw-tablet(16),
+  $laptop-up: vw-laptop(16),
+  $desktop-up: vw-desktop(16)
+);
+
+$h5-font-sizes: (
+  null  : vw-phone(14),
+  $tablet-up: vw-tablet(16),
+  $laptop-up: vw-laptop(16),
+  $desktop-up: vw-desktop(16)
+);
+
+$h6-font-sizes: (
+  null  : vw-phone(14),
+  $tablet-up: vw-tablet(16),
+  $laptop-up: vw-laptop(16),
+  $desktop-up: vw-desktop(16)
+);
+
+// Links
+$link-font-sizes: (
+  null  : vw-phone(12),
+  $tablet-up: vw-tablet(14),
+  $laptop-up: vw-laptop(16),
+  $desktop-up: vw-desktop(16)
+);
+
+// Responsive Font-Size Mixing (Function Only)
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+      @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media #{$fs-breakpoint} {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+/* stylelint-enable */
+
+/* Generate Responsive Sizing */
+
+p {
+  line-height: 110%;
+  font-weight: 400;
+  @include font-size($p-font-sizes);
+}
+
+h1,
+.h1 {
+  @include font-size($h1-font-sizes);
+}
+
+h2,
+.h2 {
+  @include font-size($h2-font-sizes);
+}
+
+h3,
+.h3 {
+  @include font-size($h3-font-sizes);
+}
+
+h4,
+.h4 {
+  @include font-size($h4-font-sizes);
+}
+
+h5,
+.h5 {
+  @include font-size($h5-font-sizes);
+}
+
+h6,
+.h6 {
+  @include font-size($h6-font-sizes);
+}
+
+.mdev-main-nav-links {
+  @include font-size($link-font-sizes);
+}
+
+/* Link Reset / Base Inherit */
+a {
+  font-family: $spec-font;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+b {
+  font-weight: 600;
+}

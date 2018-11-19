@@ -1,0 +1,235 @@
+// Overall section styles
+
+.ora-review {
+  background: $ora-darkgrey;
+  display: flex;
+  flex-direction: column;
+  padding: vw-phone(70) 5vw vw-phone(60);
+
+  @media #{$tablet-up} {
+    padding: vw-tablet(135) 10vw vw-tablet(80);
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    padding: vw-laptop(150) 14vw vw-laptop(90);
+  }
+
+  @media #{$desktop-up} {
+    padding: vw-desktop(150) 14vw vw-desktop(90);
+  }
+}
+
+// Major child styles
+
+.ora-review-left {
+  width: 100%;
+
+  @media #{$laptop-up} {
+   width: 60%;
+  }
+
+  .ora-title {
+    width: 100%;
+
+    @media #{$laptop-up} {
+      width: vw-laptop(335);
+    }
+
+    @media #{$desktop-up} {
+      width: vw-desktop(335);
+    }
+  }
+}
+
+.ora-review-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 40%;
+  }
+
+  .ora-video-title {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 0 vw-phone(9);
+
+    @media #{$tablet-up} {
+      margin: 0 0 vw-tablet(17);
+    }
+
+    @media #{$laptop-up} {
+      margin: 0 0 vw-laptop(23);
+    }
+
+    @media #{$desktop-up} {
+      margin: 0 0 vw-desktop(25);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ora-video-box {
+    width: 100%;
+    align-self: flex-start;
+
+    @media #{$tablet-up} {
+      width: 90%;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
+// Review Boxes Container Styles
+
+.ora-reviews-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: vw-phone(15) 0;
+
+    @media #{$tablet-up} {
+      padding: vw-tablet(15) 0;
+    }
+
+    @media #{$laptop-up} {
+      padding: vw-laptop(15) 0;
+    }
+
+    @media #{$desktop-up} {
+      padding: vw-desktop(15) 0;
+    }
+}
+
+// Individual Box Styles
+
+.ora-review-box {
+  width: 100%;
+
+  @media #{$phone-only} {
+    &:nth-child( n+2 ) {
+      padding-top: vw-phone(22);
+    }
+  }
+
+  @media #{$tablet-only} {
+    width: 50%;
+    padding: 0 vw-tablet(40) 0 0;
+
+    &:nth-child( n+3 ) {
+      padding-top: vw-tablet(25);
+    }
+  }
+
+  @media #{$laptop-up} {
+    width: 33.3%;
+    padding: 0 vw-laptop(40) 0 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: 0 vw-desktop(40) 0 0;
+  }
+
+  h4 {
+    width: 100%;
+    font-size: vw-phone(16);
+
+    @media #{$tablet-up} {
+      font-size: vw-tablet(20);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(18);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(18);
+    }
+  }
+
+  p {
+    width: 100%;
+    font-size: vw-phone(14);
+    padding: vw-phone(10) 0;
+
+    @media #{$tablet-up} {
+      font-size: vw-tablet(16);
+      padding: vw-tablet(10) 0;
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(14);
+      padding: vw-laptop(8) 0;
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(16);
+      padding: vw-desktop(10) 0;
+    }
+  }
+
+  .ora-review-box-author {
+    font-weight: 600;
+    font-size: vw-phone(14);
+
+    @media #{$tablet-up} {
+      font-size: vw-tablet(18);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(16);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(18);
+    }
+  }
+
+  .ora-review-stars {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: vw-phone(15) 0;
+
+    @media #{$tablet-up} {
+      margin: vw-tablet(15) 0;
+    }
+
+    @media #{$laptop-up} {
+      margin: vw-laptop(15) 0;
+    }
+
+    @media #{$desktop-up} {
+      margin: vw-desktop(15) 0;
+    }
+
+    .ora-review-star {
+      height: 21px;
+      width: 21px;
+      margin: 0 0 0 3px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}
+.ora-review-stars {
+  width: vw-desktop(145);
+}
+
+.ora-review-star {
+  width: 19.5%;
+  height: vw-desktop(27);
+
+  &:nth-child( n+2 ) {
+    margin-left: .5%;
+  }
+}

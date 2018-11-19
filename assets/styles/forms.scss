@@ -1,0 +1,97 @@
+// Global Form Styles
+form {
+  width: 100%;
+  position: relative;
+}
+
+
+/* stylelint-disable */
+/* Disabled because it is valid and I need this level of control*/
+
+input {
+  &[type="text"],
+  &[type="email"],
+  &[type="tel"],
+  &[type="password"],
+  &[type="search"],
+  &[type="url"] {
+    width: 100%;
+    font-family: $main-font;
+    background: #333;
+    border: 1px solid #5a5a5a;
+    padding: vw-phone(9) vw-phone(15);
+    margin: vw-phone(5) 0 0;
+    font-size: vw-phone(16.5);
+    color: $ora-white;
+
+    @media #{$tablet-up} {
+      margin: vw-tablet(5) 0 0;
+      padding: vw-tablet(10) vw-tablet(17);
+      font-size: vw-tablet(22.5);
+    }
+
+    @media #{$laptop-up} {
+      margin: vw-laptop(5) 0 0;
+      padding: vw-laptop(9) vw-laptop(15);
+      font-size: vw-laptop(22.5);
+    }
+
+    @media #{$desktop-up} {
+      margin: vw-desktop(5) 0 0;
+      padding: vw-desktop(10) vw-desktop(15);
+      font-size: vw-desktop(22.5);
+    }
+
+    &:first-child {
+      margin: vw-phone(10) 0 0;
+
+      @media #{$tablet-up} {
+        margin: vw-tablet(10) 0 0;
+      }
+
+      @media #{$laptop-up} {
+        margin: vw-laptop(10) 0 0;
+      }
+
+      @media #{$desktop-up} {
+        margin: vw-desktop(10) 0 0;
+      }
+    }
+
+    &:hover, &:focus, &:active {
+      border-color: $ora-green;
+    }
+
+    &::placeholder {
+      color: #8a8a8a;
+    }
+  }
+}
+
+/* stylelint-enable */
+
+/* Form Scaffolding */
+
+.mc-field-group {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  margin: vw-phone(8) 0 0;
+
+  @media #{$tablet-up} {
+    margin: vw-tablet(10) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    margin: vw-laptop(10) 0 0;
+  }
+
+  @media #{$desktop-up} {
+    margin: vw-desktop(10) 0 0;
+  }
+}
+
+.mdev-action-group {
+  width: 100%;
+  position: relative;
+}

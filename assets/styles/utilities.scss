@@ -1,0 +1,145 @@
+/*-------------------------------------
+ * UTITLITIES
+/-------------------------------------*/
+
+//Text Utilities
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-lowercase {
+  text-transform: lowercase;
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-align-top {
+  vertical-align: top;
+}
+
+.u-align-bottom {
+  vertical-align: bottom;
+}
+
+.u-align-middle {
+  vertical-align: middle;
+}
+
+.u-heading-weight {
+  font-weight: 700;
+}
+
+.u-bold {
+  font-weight: 700;
+}
+
+.u-black {
+  font-weight: 900;
+}
+
+.u-ultralight {
+  font-weight: 100;
+}
+
+.u-light {
+  font-weight: 300;
+}
+
+.u-italic {
+  font-style: italic;
+}
+/* Disabling because of !important */
+/* stylelint-disable */
+.u-hidden-phone {
+  @media #{$phone-only} {
+    display: none !important;
+  }
+}
+
+.u-hidden-tablet {
+  @media #{$tablet-only} {
+    display: none !important;
+  }
+}
+
+.u-hidden-desktop {
+
+  @media #{$tablet-up} {
+    display: none !important;
+  }
+}
+
+.u-screenreader {
+  width: 0!important;
+  height: 0!important;
+  transform: scaley(0);
+  opacity: 0!important;
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden!important;
+}
+
+
+.u-transparent {
+  opacity: 0 !important;
+}
+/* stylelint-enable */
+
+.u-hidden {
+  display: none;
+}
+
+.u-freeze-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.u-truncate {
+  @include truncate('100%');
+}
+
+.clear {
+  @include clearfix();
+}
+
+.u-no-select {
+  user-select: none;
+}
+
+// Color Utilities
+.u-c-black {
+  color: $color-brand-bkg;
+}
+
+.u-c-accent {
+  color: $color-brand-accent;
+}
+
+.u-c-primary {
+  color: $color-brand-primary;
+}
+
+.u-c-white {
+  color: $white;
+}
+
+// Body Utilities
+.--body-white {
+  background: $white;
+}

@@ -1,0 +1,164 @@
+// Overall Hero section stylers
+
+.ora-hero {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 200vh;
+  background-image: url('../images/hero-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+// Hero Banner Styles
+
+.ora-hero-banner {
+  background: #22222280;
+  height: 100%;
+  background-image: url('../images/tire-track-rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80vw;
+  margin: 0 0 0 10vw;
+  padding: 0 5%;
+
+  @media #{$tablet-up} {
+    margin: 0 0 0 55vw;
+    width: vw-tablet(277);
+    padding: 0 vw-tablet(20);
+  }
+
+  @media #{$laptop-up} {
+    margin: 0 0 0 60vw;
+    width: vw-laptop(400);
+    padding: 0 vw-laptop(50);
+  }
+
+  @media #{$desktop-up} {
+    width: vw-desktop(480);
+    padding: 0 vw-desktop(50);
+  }
+
+  &.--alt {
+    background: #afbd2190;
+    padding-bottom: vw-phone(25);
+
+    @media #{$tablet-up} {
+      padding-bottom: vw-tablet(25);
+    }
+
+    @media #{$laptop-up} {
+      padding-bottom: vw-laptop(25);
+    }
+
+    @media #{$desktop-up} {
+      padding-bottom: vw-desktop(25);
+    }
+  }
+
+  .ora-hero-logo {
+    width: 50vw;
+    margin: 0;
+
+    @media #{$tablet-up} {
+      width: vw-tablet(170);
+      margin: 0 0 vw-tablet(12);
+    }
+
+    @media #{$tablet-lnd-only} {
+      width: vw-tablet(170);
+      margin: 0 0 vw-tablet(5);
+    }
+
+    @media #{$laptop-up} {
+      width: vw-laptop(250);
+      margin: 0 0 vw-laptop(5);
+    }
+
+    @media #{$desktop-up} {
+      width: vw-desktop(250);
+      margin: 0 0 vw-desktop(5);
+    }
+  }
+
+  .ora-hero-bigtext {
+    width: 55vw;
+    margin: 0;
+
+    @media #{$tablet-up} {
+      width: vw-tablet(225);
+      margin: 0 0 vw-tablet(5);
+    }
+
+    @media #{$tablet-lnd-only} {
+      width: vw-tablet(170);
+      margin: 0 0 vw-tablet(5);
+    }
+
+    @media #{$laptop-up} {
+      width: vw-laptop(275);
+      margin: 0 0 vw-laptop(5);
+    }
+
+    @media #{$desktop-up} {
+      width: vw-desktop(325);
+      margin: 0 0 vw-desktop(5);
+    }
+  }
+
+  p {
+    text-shadow: 0 2px 16px rgba(12, 12, 12, .54);
+    font-size: vw-phone(12);
+
+    &:last-child {
+      margin: 0 0 3vh;
+    }
+
+
+    @media #{$tablet-up} {
+      font-size: vw-tablet(18);
+    }
+
+    @media #{$tablet-lnd-only} {
+      font-size: vw-tablet(14);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(20);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(24);
+    }
+  }
+
+  a {
+    margin: vw-phone(8) 0;
+
+    @media #{$phone-only} {
+      font-size: vw-phone(13);
+    }
+
+    @media #{$tablet-up} {
+      margin: vw-tablet(12) 0;
+    }
+
+    @media #{$tablet-lnd-only} {
+      margin: vw-tablet(10) 0;
+    }
+
+    @media #{$laptop-up} {
+      margin: vw-laptop(12) 0;
+    }
+
+    @media #{$desktop-up} {
+      margin: vw-desktop(12) 0;
+    }
+  }
+}

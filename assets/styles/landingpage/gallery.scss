@@ -1,0 +1,248 @@
+// Overall section styles
+
+.ora-gallery {
+  background: $ora-grey;
+  padding: 0 5vw;
+
+    @media #{$tablet-up} {
+    padding: vw-tablet(5) 10vw;
+    }
+
+  @media #{$laptop-up} {
+    padding: vw-laptop(5) 14vw 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: vw-desktop(55) 14vw 0;
+  }
+}
+
+// Threeblock and major child styles
+
+.ora-gallery-threeblock {
+  display: flex;
+  flex-direction: column;
+  padding: vw-phone(50) 0 0;
+
+  @media #{$tablet-up} {
+    padding: vw-tablet(50) 0 0;
+  }
+
+  @media #{$laptop-up} {
+    padding: vw-laptop(50) 0 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: vw-desktop(75) 0 0;
+  }
+
+  .ora-title {
+    width: 100%;
+  }
+
+  .ora-title-line {
+    width: 100%;
+
+    @media #{$laptop-up} {
+      width: vw-laptop(335);
+    }
+
+    @media #{$desktop-up} {
+      width: vw-desktop(335);
+    }
+  }
+
+  .ora-threeblock-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+// Individual Block Stylers
+
+.ora-threeblock-block {
+  width: 100%;
+  background-image: url('../images/lift-kits.png'); // Fallback image default
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: default;
+  height: vw-phone(140);
+  margin: vw-phone(10) 0 0;
+
+  @media #{$tablet-up} {
+    width: 33%;
+    height: vw-tablet(140);
+    margin: vw-tablet(8) 0 0;
+
+    &:nth-child( n+2 ) {
+      margin-left: .5%;
+    }
+  }
+
+  @media #{$laptop-up} {
+    height: vw-laptop(275);
+    margin: vw-laptop(8) 0 0;
+  }
+
+  @media #{$desktop-up} {
+    height: vw-desktop(330);
+    margin: vw-desktop(8) 0 0;
+  }
+
+  &.--shock {
+    background-image: url('../images/lift-kits.png');
+  }
+
+  &.--tire {
+    background-image: url('../images/tires.png');
+  }
+
+  &.--recovery {
+    background-image: url('../images/recovery-gear.png');
+  }
+
+  &.--lights {
+    background-image: url('../images/lights-light-bars.png');
+  }
+
+  &.--flare {
+    background-image: url('../images/flare.png');
+  }
+
+  &.--wheels {
+    background-image: url('../images/wheels.png');
+  }
+
+  h3 {
+    text-shadow: 1px 1px 25px rgba(0, 0, 0, 1),3px 3px 25px rgba(0, 0, 0, 1),2px 2px 25px rgba(0, 0, 0, 1);
+    padding: vw-phone(18) 0 0 vw-phone(12);
+    font-size: vw-phone(32);
+
+    @media #{$tablet-up} {
+      padding: vw-tablet(18) 0 0 vw-tablet(12);
+      font-size: vw-tablet(32);
+    }
+
+    @media #{$laptop-up} {
+      padding: vw-laptop(25) 0 0 vw-laptop(25);
+      font-size: vw-laptop(32);
+    }
+
+    @media #{$desktop-up} {
+      padding: vw-desktop(20) 0 0 vw-desktop(25);
+      font-size: vw-desktop(48);
+    }
+  }
+}
+
+// Gallery CTA Styles
+
+.ora-gallery-cta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding: vw-phone(40) 0 vw-phone(75);
+
+    @media #{$tablet-up} {
+      padding: vw-tablet(50) 0 vw-tablet(85);
+    }
+
+    @media #{$laptop-up} {
+      padding: vw-laptop(85) 0 vw-laptop(90);
+    }
+
+    @media #{$desktop-up} {
+      padding: vw-desktop(85) 0 vw-desktop(90);
+    }
+
+  .ora-gallery-cta-banner {
+    background: url('../images/we-install.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: vw-phone(30);
+
+    @media #{$tablet-up} {
+      width: vw-tablet(550);
+      height: vw-tablet(30);
+    }
+
+    @media #{$laptop-up} {
+      width: vw-laptop(675);
+      height: vw-laptop(40);
+    }
+
+    @media #{$desktop-up} {
+      width: vw-desktop(675);
+      height: vw-desktop(40);
+    }
+  }
+
+  .ora-btn-box {
+    width: 100%;
+    text-align: center;
+    margin: vw-phone(20) 0 vw-phone(13);
+
+    @media #{$tablet-up} {
+      margin: vw-tablet(20) 0 vw-tablet(13);
+    }
+
+    @media #{$laptop-up} {
+      margin: vw-laptop(38) 0;
+    }
+
+    @media #{$desktop-up} {
+      margin: vw-desktop(38) 0;
+    }
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+    font-size: vw-phone(13.5);
+
+    @media #{$tablet-up} {
+      font-size: vw-tablet(20);
+    }
+
+    @media #{$laptop-up} {
+      font-size: vw-laptop(26);
+    }
+
+    @media #{$desktop-up} {
+      font-size: vw-desktop(26);
+    }
+
+
+  }
+
+  .ora-phone {
+    font-size: inherit;
+
+    @media #{$phone-only} {
+      text-align: center;
+      font-size: vw-phone(22);
+    }
+  }
+
+  .ora-btn-box {
+    width: 100%;
+
+    @media #{$tablet-up} {
+      width: vw-tablet(275);
+    }
+
+    @media #{$laptop-up} {
+      width: vw-laptop(360);
+    }
+
+    @media #{$desktop-up} {
+      width: vw-desktop(360);
+    }
+  }
+}

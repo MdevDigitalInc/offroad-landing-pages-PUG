@@ -1,0 +1,188 @@
+.ora-about {
+  background: $ora-darkgrey;
+  display: flex;
+  flex-direction: column;
+  padding: vw-phone(43) 5vw 0;
+
+  @media #{$tablet-up} {
+    padding: vw-tablet(67) 10vw 0;
+  }
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: vw-laptop(73) 17vw 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: vw-desktop(73) 17vw 0;
+  }
+
+  // About Left Section Styles
+
+  .ora-about-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    @media #{$laptop-up} {
+      width: 55%;
+      margin-right: 5%;
+    }
+
+    .ora-btn-box {
+      width: 100%;
+      margin-top: vw-phone(40);
+
+      @media #{$tablet-up} {
+        width: vw-tablet(266);
+        margin-top: vw-tablet(35);
+      }
+
+      @media #{$laptop-up} {
+        width: vw-laptop(400);
+        margin-top: vw-laptop(50);
+      }
+
+      @media #{$desktop-up} {
+        width: vw-desktop(375);
+        margin-top: vw-desktop(50);
+      }
+    }
+  }
+
+  // About Right Section Styles
+
+  .ora-about-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: vw-phone(50) 0 0;
+
+    @media #{$tablet-up} {
+      margin: vw-tablet(70) 0 0;
+    }
+
+    @media #{$laptop-up} {
+      width: 40%;
+      margin: 0;
+    }
+
+    .ora-img-box {
+      @media #{$tablet-only} {
+        width: 80%;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// About Blurb Styles
+
+.ora-about-blurb {
+
+  .ora-img-box {
+    margin: 0 0 vw-phone(3);
+
+    @media #{$tablet-up} {
+      margin: 0 0 vw-tablet(3);
+    }
+
+    @media #{$laptop-up} {
+      margin: 0 0 vw-laptop(3);
+    }
+
+    @media #{$desktop-up} {
+      margin: 0 0 vw-desktop(3);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    margin: vw-phone(12) 0 0;
+    font-size: vw-phone(16);
+
+    @media #{$tablet-up} {
+      margin: vw-tablet(12) 0 0;
+      font-size: vw-tablet(24);
+    }
+
+    @media #{$laptop-up} {
+      margin: vw-laptop(12) 0 0;
+      font-size: vw-laptop(20);
+    }
+
+    @media #{$desktop-up} {
+      margin: vw-desktop(12) 0 0;
+      font-size: vw-desktop(24);
+    }
+  }
+}
+
+// About List Styles
+
+.ora-about-list {
+  display: flex;
+  flex-direction: column;
+  padding: vw-phone(10) 0 0;
+
+  @media #{$tablet-up} {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+// Boxes container styles
+
+.ora-list-boxes {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  &.--right {
+
+    @media #{$tablet-up} {
+      margin-left: vw-tablet(60);
+    }
+
+    @media #{$laptop-up} {
+      margin-left: vw-laptop(50);
+    }
+
+    @media #{$desktop-up} {
+      margin-left: vw-desktop(50);
+    }
+  }
+}
+
+// Individual Box Styles
+
+.ora-list-box {
+
+  margin-top: vw-phone(15);
+
+  @media #{$tablet-up} {
+    margin-top: vw-tablet(30);
+  }
+
+  @media #{$laptop-up} {
+    margin-top: vw-laptop(30);
+  }
+
+  @media #{$desktop-up} {
+    margin-top: vw-desktop(30);
+  }
+
+  ul {
+    li {
+      line-height: 130%;
+    }
+  }
+}

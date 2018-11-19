@@ -1,0 +1,93 @@
+/*-----------------------------------------]
+
+	[Global Main Stylesheet] - V 0.0.1
+	Created On: Dec - 28 - 2016 - Ubuntu 16.04
+	Updated On: Aug - 10 - 2018 - Ubuntu 18.04
+
+	Desc: Main stylesheet comprises the
+	imports necessary to style the website
+	and avoids repetition inside the components
+
+----------------------------------------]*/
+
+/*----
+ Reset
+-----*/
+@import 'reset.scss';
+
+/*----
+ Mdev Boilerplate
+-----*/
+@import '~@moreira-development/sass-boilerplate-lean/styles/global-main.scss';
+
+/*----
+  Flex
+-----*/
+@import './flex.scss';
+
+/*----
+	Global Variables
+-----*/
+@import './variables.scss';
+
+/*----
+  Mixins
+-----*/
+@import './mixins.scss';
+
+/*----
+	Global Typography
+-----*/
+@import './typography.scss';
+
+/*----
+ 	Utilities
+-----*/
+@import './utilities.scss';
+
+/*---
+  Scaffolding
+-----*/
+@import './scaffolding.scss';
+
+/*---
+  icons
+-----*/
+@import './icons.scss';
+
+/*----
+  Buttons
+-----*/
+@import './buttons.scss';
+
+/*----
+  Decorations
+-----*/
+@import './decorations.scss';
+
+/*----
+  Animations
+-----*/
+@import './animations.scss';
+
+/*----
+  Forms
+-----*/
+@import './forms.scss';
+
+/*----
+  Index
+-----*/
+@import './index.scss';
+
+/*----
+  Print
+-----*/
+@import './print.scss';
+@import './index.scss';
+@import './landingpage/about.scss';
+@import './landingpage/footer.scss';
+@import './landingpage/gallery.scss';
+@import './landingpage/hero.scss';
+@import './landingpage/review.scss';
+
