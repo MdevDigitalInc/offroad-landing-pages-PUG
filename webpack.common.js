@@ -170,7 +170,7 @@ module.exports = {
       filename: 'custom-ford-builds-lift-kits.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/speciality.pug',
+      template: './src/templates/specialty.pug',
       filename: 'custom-4x4-builds-lift-kits.html'
     }),
     new CopyWebpackPlugin([
