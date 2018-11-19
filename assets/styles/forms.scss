@@ -4,7 +4,6 @@ form {
   position: relative;
 }
 
-
 /* stylelint-disable */
 /* Disabled because it is valid and I need this level of control*/
 
@@ -27,19 +26,19 @@ input {
     @media #{$tablet-up} {
       margin: vw-tablet(5) 0 0;
       padding: vw-tablet(10) vw-tablet(17);
-      font-size: vw-tablet(22.5);
+      font-size: vw-tablet(20.5);
     }
 
     @media #{$laptop-up} {
       margin: vw-laptop(5) 0 0;
       padding: vw-laptop(9) vw-laptop(15);
-      font-size: vw-laptop(22.5);
+      font-size: vw-laptop(20.5);
     }
 
     @media #{$desktop-up} {
       margin: vw-desktop(5) 0 0;
       padding: vw-desktop(10) vw-desktop(15);
-      font-size: vw-desktop(22.5);
+      font-size: vw-desktop(20.5);
     }
 
     &:first-child {
