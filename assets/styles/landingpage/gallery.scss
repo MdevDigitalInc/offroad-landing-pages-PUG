@@ -141,6 +141,32 @@
     background-image: url('../images/dodge/dodge-wheels.png');
   }
 
+  // Chevy Specific
+
+  &.--chevy-tire {
+    background-image: url('../images/chevy/chevy-tires.png');
+  }
+
+  &.--chevy-steps {
+    background-image: url('../images/chevy/chevy-steps.png');
+  }
+
+  &.--chevy-lift {
+    background-image: url('../images/chevy/chevy-lift-kits.png');
+  }
+
+  &.--chevy-covers {
+    background-image: url('../images/chevy/chevy-tonneau-covers.png');
+  }
+
+  &.--chevy-bumpers {
+    background-image: url('../images/chevy/chevy-bumpers.png');
+  }
+
+  &.--chevy-wheels {
+    background-image: url('../images/chevy/chevy-wheels.png');
+  }
+
   h3 {
     text-shadow: 1px 1px 25px rgba(0, 0, 0, 1),
     3px 3px 25px rgba(0, 0, 0, 1),
