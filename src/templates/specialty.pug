@@ -249,20 +249,20 @@ html
                   span
                     |&nbsp;indicates required
                 .mc-field-group
+                  label(for="mce-FNAME")
+                    |First Name&nbsp;
+                  input#mce-FNAME(type="text" value="" name="FNAME" placeholder="First Name")
+                .mc-field-group
                   label(for="mce-EMAIL")
                     |Email Address&nbsp;
                   span.asterisk
                     |*
                   input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="Email Address *")
-                .mc-field-group
-                  label(for="mce-FNAME")
-                    |First Name&nbsp;
-                  input#mce-FNAME(type="text" value="" name="FNAME" placeholder="First Name")
-                .mc-field-group
-                  label(for="mce-LNAME")
-                    |Last Name&nbsp;
-                  input#mce-LNAME(type="text" value="" name="LNAME" placeholder="Last Name")
                 //-
+                  .mc-field-group
+                    label(for="mce-LNAME")
+                      |Last Name&nbsp;
+                    input#mce-LNAME(type="text" value="" name="LNAME" placeholder="Last Name")
                   .mc-field-group
                     label(for="mce-MMERGE5")
                       |Name&nbsp;
