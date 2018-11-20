@@ -115,6 +115,32 @@
     background-image: url('../images/wheels.png');
   }
 
+  // Dodge Specific
+
+  &.--dodge-tire {
+    background-image: url('../images/dodge/dodge-tires.png');
+  }
+
+  &.--dodge-winches {
+    background-image: url('../images/dodge/dodge-winches.png');
+  }
+
+  &.--dodge-lift {
+    background-image: url('../images/dodge/dodge-lift-kits.png');
+  }
+
+  &.--dodge-covers {
+    background-image: url('../images/dodge/dodge-tonneau-covers.png');
+  }
+
+  &.--dodge-steps {
+    background-image: url('../images/dodge/dodge-steps.png');
+  }
+
+  &.--dodge-wheels {
+    background-image: url('../images/dodge/dodge-wheels.png');
+  }
+
   h3 {
     text-shadow: 1px 1px 25px rgba(0, 0, 0, 1),
     3px 3px 25px rgba(0, 0, 0, 1),

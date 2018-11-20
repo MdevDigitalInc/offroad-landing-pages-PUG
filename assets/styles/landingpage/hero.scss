@@ -9,6 +9,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  &.--dodge {
+    background-image: url('../images/dodge/dodge-hero-image.png');
+  }
+
+  &.--dodge-footer {
+    background-image: url('../images/dodge/dodge-footer-hero.png');
+  }
+  
+  &.--ford {
+    background-image: url('../images/dodge/dodge-hero-image.png');
+  }
+
+  &.--chevy {
+    background-image: url('../images/dodge/dodge-hero-image.png');
+  }
+
+  &.--specialty {
+    background-image: url('../images/dodge/dodge-hero-image.png');
+  }
 }
 
 // Hero Banner Styles
