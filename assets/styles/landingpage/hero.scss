@@ -9,6 +9,30 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  &.--dodge {
+    background-image: url('../images/dodge/dodge-hero-image.png');
+  }
+
+  &.--dodge-footer {
+    background-image: url('../images/dodge/dodge-footer-hero.png');
+  }
+
+  &.--chevy {
+    background-image: url('../images/chevy/chevy-hero-image.png');
+  }
+
+  &.--chevy-footer {
+    background-image: url('../images/chevy/chevy-footer-hero.png');
+  }
+  
+  &.--ford {
+    background-image: url('../images/ford/ford-hero-image.png');
+  }
+
+  &.--ford-footer {
+    background-image: url('../images/ford/ford-footer-hero.png');
+  }
 }
 
 // Hero Banner Styles
