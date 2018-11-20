@@ -61,6 +61,14 @@
       max-width: 210px;
     }
 
+    &.--dodge {
+      max-width: 300px;
+    }
+
+    &.--chevy {
+      max-width: 313px;
+    }
+
     @media #{$tablet-up} {
       margin: 0 0 vw-tablet(17);
     }
