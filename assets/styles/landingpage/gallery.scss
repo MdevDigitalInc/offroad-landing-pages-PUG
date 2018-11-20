@@ -167,6 +167,32 @@
     background-image: url('../images/chevy/chevy-wheels.png');
   }
 
+  // Ford Specific
+
+  &.--ford-tire {
+    background-image: url('../images/ford/ford-tires.png');
+  }
+
+  &.--ford-lift {
+    background-image: url('../images/ford/ford-lift-kits.png');
+  }
+
+  &.--ford-bumpers {
+    background-image: url('../images/ford/ford-bumpers.png');
+  }
+
+  &.--ford-covers {
+    background-image: url('../images/ford/ford-tonneau-cover.png');
+  }
+
+  &.--ford-flare {
+    background-image: url('../images/ford/ford-flare.png');
+  }
+
+  &.--ford-wheels {
+    background-image: url('../images/ford/ford-wheels.png');
+  }
+
   h3 {
     text-shadow: 1px 1px 25px rgba(0, 0, 0, 1),
     3px 3px 25px rgba(0, 0, 0, 1),
