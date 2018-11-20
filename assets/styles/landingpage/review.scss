@@ -26,7 +26,7 @@
   width: 100%;
 
   @media #{$laptop-up} {
-   width: 60%;
+    width: 60%;
   }
 
   .ora-title {
@@ -95,17 +95,17 @@
   flex-wrap: wrap;
   padding: vw-phone(15) 0;
 
-    @media #{$tablet-up} {
-      padding: vw-tablet(15) 0;
-    }
+  @media #{$tablet-up} {
+    padding: vw-tablet(15) 0;
+  }
 
-    @media #{$laptop-up} {
-      padding: vw-laptop(15) 0;
-    }
+  @media #{$laptop-up} {
+    padding: vw-laptop(15) 0;
+  }
 
-    @media #{$desktop-up} {
-      padding: vw-desktop(15) 0;
-    }
+  @media #{$desktop-up} {
+    padding: vw-desktop(15) 0;
+  }
 }
 
 // Individual Box Styles

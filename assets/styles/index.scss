@@ -23,7 +23,7 @@
     margin: vw-desktop(5) 0 vw-desktop(10);
   }
 
-  &::after {
+  &:after {
     content: '';
     position: absolute;
     right: 0;

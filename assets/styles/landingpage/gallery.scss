@@ -4,9 +4,9 @@
   background: $ora-grey;
   padding: 0 5vw;
 
-    @media #{$tablet-up} {
+  @media #{$tablet-up} {
     padding: vw-tablet(5) 10vw;
-    }
+  }
 
   @media #{$laptop-up} {
     padding: vw-laptop(5) 14vw 0;
@@ -116,7 +116,9 @@
   }
 
   h3 {
-    text-shadow: 1px 1px 25px rgba(0, 0, 0, 1),3px 3px 25px rgba(0, 0, 0, 1),2px 2px 25px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 25px rgba(0, 0, 0, 1),
+    3px 3px 25px rgba(0, 0, 0, 1),
+    2px 2px 25px rgba(0, 0, 0, 1);
     padding: vw-phone(18) 0 0 vw-phone(12);
     font-size: vw-phone(32);
 
@@ -147,17 +149,17 @@
 
   padding: vw-phone(40) 0 vw-phone(75);
 
-    @media #{$tablet-up} {
-      padding: vw-tablet(50) 0 vw-tablet(85);
-    }
+  @media #{$tablet-up} {
+    padding: vw-tablet(50) 0 vw-tablet(85);
+  }
 
-    @media #{$laptop-up} {
-      padding: vw-laptop(85) 0 vw-laptop(90);
-    }
+  @media #{$laptop-up} {
+    padding: vw-laptop(85) 0 vw-laptop(90);
+  }
 
-    @media #{$desktop-up} {
-      padding: vw-desktop(85) 0 vw-desktop(90);
-    }
+  @media #{$desktop-up} {
+    padding: vw-desktop(85) 0 vw-desktop(90);
+  }
 
   .ora-gallery-cta-banner {
     background: url('../images/we-install.png');
@@ -217,8 +219,6 @@
     @media #{$desktop-up} {
       font-size: vw-desktop(26);
     }
-
-
   }
 
   .ora-phone {

@@ -183,7 +183,7 @@
       width: 40%;
 
       &:nth-child( 2n ) {
-        padding-left:vw-tablet(40);
+        padding-left: vw-tablet(40);
         width: 60%;
       }
 
@@ -194,7 +194,7 @@
 
     @media #{$laptop-only} {
       &:nth-child( 2n ) {
-        padding-left:vw-laptop(40);
+        padding-left: vw-laptop(40);
       }
 
       &:nth-child( n+3 ) {
@@ -204,7 +204,7 @@
 
     @media #{$desktop-up} {
       &:nth-child( 2n ) {
-        padding-left:vw-desktop(40);
+        padding-left: vw-desktop(40);
       }
 
       &:nth-child( n+3 ) {
