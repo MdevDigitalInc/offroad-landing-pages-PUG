@@ -24,6 +24,19 @@
 
   &.--chevy-footer {
     background-image: url('../images/chevy/chevy-footer-hero.png');
+    background-size: 400% auto;
+
+    @media #{$tablet-up} {
+      background-size: 200% auto;
+    }
+
+    @media #{$laptop-up} {
+      background-size: 150% auto;
+    }
+
+    @media #{$desktop-up} {
+      background-size: 105% auto;
+    }
   }
   
   &.--ford {
