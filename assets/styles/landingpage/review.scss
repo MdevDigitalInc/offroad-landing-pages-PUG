@@ -25,10 +25,6 @@
 .ora-review-left {
   width: 100%;
 
-  @media #{$laptop-up} {
-    width: 60%;
-  }
-
   .ora-title {
     width: 100%;
 
@@ -42,63 +38,6 @@
   }
 }
 
-.ora-review-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-
-  @media #{$laptop-up} {
-    width: 40%;
-  }
-
-  .ora-video-title {
-    max-width: 420px;
-    width: 100%;
-    margin: 0 0 vw-phone(9);
-
-    &.--ford {
-      max-width: 210px;
-    }
-
-    &.--dodge {
-      max-width: 300px;
-    }
-
-    &.--chevy {
-      max-width: 313px;
-    }
-
-    @media #{$tablet-up} {
-      margin: 0 0 vw-tablet(17);
-    }
-
-    @media #{$laptop-up} {
-      margin: 0 0 vw-laptop(23);
-    }
-
-    @media #{$desktop-up} {
-      margin: 0 0 vw-desktop(25);
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-
-  .ora-video-box {
-    width: 100%;
-    align-self: flex-start;
-
-    @media #{$tablet-up} {
-      width: 90%;
-    }
-
-    iframe {
-      width: 100%;
-    }
-  }
-}
 // Review Boxes Container Styles
 
 .ora-reviews-boxes {

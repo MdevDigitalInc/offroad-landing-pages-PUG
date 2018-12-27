@@ -158,20 +158,8 @@ module.exports = {
       template: './src/templates/index.pug'
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/chevy.pug',
-      filename: 'custom-chevy-builds-lift-kits.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/dodge.pug',
-      filename: 'custom-dodge-builds-lift-kits.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/ford.pug',
-      filename: 'custom-ford-builds-lift-kits.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/specialty.pug',
-      filename: 'custom-4x4-builds-lift-kits.html'
+      template: './src/templates/example.pug',
+      filename: 'example.html'
     }),
     new CopyWebpackPlugin([
       { from: 'src/js', to: 'js', force: true }

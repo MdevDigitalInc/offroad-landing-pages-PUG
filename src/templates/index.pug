@@ -3,58 +3,6 @@ html
   include ../shared/meta-head.pug
   body
     .ora-page-container
-      // Hero Section ----------------------------------------:
-      .ora-hero
-        .ora-hero-banner
-          .ora-hero-logo
-            img(src="../../assets/images/ora-logo.svg" alt="Offroad Addiction Logo")
-          .ora-hero-bigtext
-            img(src="../../assets/images/4x4-logo-primary.svg" alt="Build your dream 4x4")
-          p
-            |Our in-house team of experienced certified auto technicians are ready to <b>make your dream Jeep a reality.</b>
-          a.ora-btn.--light(href="http://offroadaddict.simplybook.me/" title="Book a free consultation")
-            |  BOOK A FREE CONSULTATION
-          p
-            |Or call <b>1-877-309-7623</b> to book. Drop-ins also welcome at our St. Thomas, ON location!
-      // Gallery Section ----------------------------------------:
-      .ora-gallery
-        .ora-gallery-threeblock
-          .ora-title
-            h2
-              |OFFROAD READY
-            .ora-title-line
-          .ora-threeblock-blocks
-            .ora-threeblock-block.--shock
-              h3
-                |LIFT<br/>KITS
-            .ora-threeblock-block.--tire
-              h3
-                |TIRES
-            .ora-threeblock-block.--recovery
-              h3
-                |RECOVERY<br/>GEARS
-        .ora-gallery-threeblock
-          .ora-title
-            h2
-              |EXTERIOR
-            .ora-title-line
-          .ora-threeblock-blocks
-            .ora-threeblock-block.--lights
-              h3
-                |LIGHTS &amp;<br/>LIGHT BARS
-            .ora-threeblock-block.--flare
-              h3
-                |FLARE
-            .ora-threeblock-block.--wheels
-              h3
-                |WHEELS
-        .ora-gallery-cta
-          .ora-gallery-cta-banner
-          .ora-btn-box
-            a.ora-btn.--light(href="http://offroadaddict.simplybook.me/" title="Book a free consultation")
-              |  BOOK A FREE CONSULTATION
-          p.ora-phone
-            |Call <b>1-877-309-7623</b> to book.
       // About Section ----------------------------------------:
       .ora-about
         .ora-about-left
@@ -171,7 +119,7 @@ html
         .ora-review-left
           .ora-title
             h2
-              |CUSTOMER REVIEWS
+              |OFF ROAD CUSTOMER REVIEWS
             .ora-title-line
           .ora-reviews-boxes
             .ora-review-box
@@ -213,21 +161,6 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
-        .ora-review-right
-          .ora-video-title
-            img(src="../../assets/images/video-title.png" alt ="Custom built jeep wrangler")
-          .ora-video-box
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/bMeN0bhf724" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      // Pre-footer Section ----------------------------------------:
-      .ora-prefooter
-        .ora-hero
-          .ora-hero-banner.--alt
-            .ora-hero-logo
-              img(src="../../assets/images/ora-logo.svg" alt="Offroad Addiction logo")
-            .ora-hero-bigtext
-              img(src="../../assets/images/4x4-logo-reverse.svg" alt="Build your dream 4x4")
-            a.ora-btn.--darker(href="http://offroadaddict.simplybook.me/" title="Book a free consultation")
-              |  BOOK A FREE CONSULTATION
       // Footer Section
       footer.ora-footer
         .ora-footer-about
@@ -236,58 +169,21 @@ html
               |ABOUT US
             .ora-title-line
           p
-            |Off Road Addiction was created by Ryan Stoangi in 2004 from his passion for off-road and performance motorsports. Ryan and his team strive for excellence in customer satisfaction and service. With over 80 years of combined technical experience, the Off Road Addiction team provides quality installations and the right advice on your dream build or project. Done right the first time, every time.
-        .ora-footer-mailing
-          .ora-img-box
-            img(src="../../assets/images/join-our-mailing-list.png" alt="Join our mailing list")
-          #mc_embed_signup
-            form#mc-embedded-subscribe-form.validate(action="https://offroad-addiction.us9.list-manage.com/subscribe/post?u=fa835280d7e52207971079617&amp;id=961e94c97c" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
-              #mc_embed_signup_scroll
-                .indicates-required
-                  span.asterisk
-                    |*
-                  span
-                    |&nbsp;indicates required
-                .mc-field-group
-                  label(for="mce-FNAME")
-                    |First Name&nbsp;
-                  input#mce-FNAME(type="text" value="" name="FNAME" placeholder="First Name")
-                .mc-field-group
-                  label(for="mce-EMAIL")
-                    |Email Address&nbsp;
-                  span.asterisk
-                    |*
-                  input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="Email Address *")
-                //-
-                  .mc-field-group
-                    label(for="mce-LNAME")
-                      |Last Name&nbsp;
-                    input#mce-LNAME(type="text" value="" name="LNAME" placeholder="Last Name")
-                  .mc-field-group
-                    label(for="mce-MMERGE5")
-                      |Name&nbsp;
-                    input#mce-MMERGE5(type="text" value="" name="MMERGE5" placeholder="Full Name")
-                #mce-responses.clear
-                  #mce-error-response.response(style="display:none")
-                  #mce-success-response.response(style="display:none") <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                div(style="position: absolute; left: -5000px;" aria-hidden="true")
-                  input(type="text" name="b_fa835280d7e52207971079617_961e94c97c" tabindex="-1" value="")
-                .clear
-                  input#mc-embedded-subscribe.button.ora-btn(style="border: none;" type="submit" value="SUBSCRIBE" name="subscribe")
+            |Off Road Addiction was created by Ryan Stoangi in 2004 to fuel his passion for off-road and performance motorsports. Ryan and his team insist on excellence in customer satisfaction and service. With over 80 years of combined technical expertise, the Off Road Addiction team provides quality installations and the right advice on your dream build or project.
         .ora-footer-contact
           .ora-title
             h2
-              |CONTACT US
+              |VISIT THE SHOP
             .ora-title-line
           .ora-footer-contact-boxes
             .ora-footer-contact-box
               p
                 |Off Road Addiction<br/>45025 Talbot Line<br/>St Thomas, ON N5P 3S7
               a.ora-get-directions(href="https://www.google.ca/maps/place/Off+Road+Addiction/@42.7763794,-81.1035633,17z/data=!3m1!4b1!4m5!3m4!1s0x882eed21fc18153f:0x6fc663584461ad3d!8m2!3d42.7763794!4d-81.1013746" title="Directions")
-                |Get Directions
+                |GET DIRECTIONS
             .ora-footer-contact-box
               p
-                |Monday – Friday: 9AM - 6PM<br/>Saturday: 9AM - 2PM<br/>Sunday: Closed
+                |Monday – Friday: 9am - 6pm<br/>Saturday: 9am - 2pm<br/>Sunday: Closed
             .ora-footer-contact-box
               p
                 |Phone: 519-451-6076<br/>Toll Free: 1-87-309-7623<br/>Fax: 519-637-7373
@@ -296,4 +192,3 @@ html
                 i.fab.fa-facebook-f
               a.zuc-social-link(href="https://www.instagram.com/offroad_addiction_swo" title="Follow us on Instagram")
                 i.fab.fa-instagram
-
