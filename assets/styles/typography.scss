@@ -51,10 +51,8 @@ $h2-font-sizes: (
 );
 
 $h3-font-sizes: (
-  null  : vw-phone(20),
-  $tablet-up: vw-tablet(20.5),
-  $laptop-up: vw-laptop(47.5),
-  $desktop-up: vw-desktop(47.5)
+  null  : 20px,
+  $laptop-up: 41.5px
 );
 
 $h4-font-sizes: (
@@ -80,10 +78,8 @@ $h6-font-sizes: (
 
 // Links
 $link-font-sizes: (
-  null  : vw-phone(12),
-  $tablet-up: vw-tablet(14),
-  $laptop-up: vw-laptop(16),
-  $desktop-up: vw-desktop(16)
+  null  : 12px,
+  $laptop-up: 16px
 );
 
 // Responsive Font-Size Mixing (Function Only)
@@ -123,6 +119,7 @@ h2,
 h3,
 .h3 {
   @include font-size($h3-font-sizes);
+  line-height: 115%;
 }
 
 h4,
@@ -160,4 +157,16 @@ a {
 
 b {
   font-weight: 600;
+}
+
+em {
+  color: $ora-green;
+}
+
+.ora-br-laptop {
+  display: none;
+
+  @media #{$laptop-up} {
+    display: inline;
+  }
 }
