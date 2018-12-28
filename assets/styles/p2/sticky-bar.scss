@@ -1,0 +1,106 @@
+.ora-sticky-bar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9001;
+  background: $ora-grey;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 0 37.8px 4.2px #000000;
+}
+
+.ora-sticky-buttons {
+  display: flex;
+
+  @media #{$phone-only} {
+    width: 100%;
+  }
+}
+
+.ora-sticky-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $ora-green;
+  cursor: pointer;
+  padding: 10px;
+  transition: all .4s;
+
+  @media #{$phone-only} {
+    width: 33.3%;
+    flex-direction: column;
+  }
+
+  &:hover {
+    background-color: darken($ora-green, 10%);
+  }
+
+  .ora-sticky-button-icon {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    color: $ora-darkgrey;
+    margin-right: 8px;
+
+    @media #{$phone-only} {
+      margin-right: 0;
+      margin-top: 5px;
+    }
+  }
+
+  &.--phone {
+    border-left: 1px solid $white;
+
+    @media #{$phone-only} {
+      border: none;
+    }
+  }
+
+  &.--chat {
+    background-color: $white;
+
+    .ora-sticky-button-icon {
+      color: $ora-green;
+    }
+
+    .ora-sticky-button-text {
+      color: $ora-darkgrey;
+    }
+
+    &:hover {
+      background-color: darken($white, 10%);
+    }
+
+    .ora-sticky-button-hidden {
+      color: $ora-darkgrey;
+    }
+  }
+}
+
+.ora-sticky-button-text {
+  color: $white;
+  font-weight: 600;
+
+  .ora-sticky-button-text-micro {
+    font-size: 15px;
+  }
+
+  .ora-sticky-button-text-macro {
+    font-size: 22.5px;
+  }
+
+  @media #{$phone-only} {
+    display: none;
+  }
+}
+
+.ora-sticky-button-hidden {
+  display: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3px;
+
+  @media #{$phone-only} {
+    display: block;
+  }
+}

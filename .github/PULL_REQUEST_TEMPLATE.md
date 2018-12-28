@@ -1,9 +1,8 @@
 ## Prerequisites
 N/A
+
 ## Changes:
-- Your
-- Changes
-- Here
+- YourChangesHere
 
 ## How To Test:
 - In terminal: `npm run dev`
@@ -17,6 +16,6 @@ N/A
 
 ## Design Links
 
-[Zeplin](https://app.zeplin.io/project/5b6eee8ae47db8634b169b22/dashboard)
+[ORA Landing Pages Zeplin](https://app.zeplin.io/project/5bec3f59c509273f9ec0ee64)
 
-:+1:
+:truck:

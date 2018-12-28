@@ -81,6 +81,11 @@
 @import './index.scss';
 
 /*----
+  Phase 2 Styles
+-----*/
+@import './p2/p2-main.scss';
+
+/*----
   Default Template Styles
 -----*/
 @import './landingpage/about.scss';
@@ -88,14 +93,6 @@
 @import './landingpage/gallery.scss';
 @import './landingpage/hero.scss';
 @import './landingpage/review.scss';
-
-/*----
-  Duplicate Template Styles
------*/
-@import './chevy/chevy-main.scss';
-@import './ford/ford-main.scss';
-@import './dodge/dodge-main.scss';
-@import './specialty/specialty-main.scss';
 
 /*----
   Print
