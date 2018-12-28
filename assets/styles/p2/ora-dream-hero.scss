@@ -1,0 +1,73 @@
+.ora-dream-hero {
+  width: 100%;
+  position: relative;
+  background-color: $ora-darkgrey;
+}
+
+// DEV ONLY
+
+.ora-dream-hero-content {
+  display: none;
+}
+
+// Background Styles
+
+.ora-dream-hero-bg {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.ora-dream-hero-bg-grid {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.ora-dream-hero-bg-grid-item {
+  width: 50%;
+  height: 175px;
+  background-color: #202020;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media #{$tablet-only} {
+    height: 350px;
+  }
+
+  @media #{$laptop-up} {
+    width: 25%;
+    height: 420px;
+  }
+
+  &.--rock {
+    background-image: url('../images/p2/dreamhero/hero-rocks.png');
+  }
+
+  &.--mud {
+    background-image: url('../images/p2/dreamhero/hero-mud.png');
+  }
+
+  &.--road {
+    background-image: url('../images/p2/dreamhero/hero-paved-road.png');
+  }
+
+  &.--ice {
+    background-image: url('../images/p2/dreamhero/hero-winter-road.png');
+  }
+}
+
+.ora-dream-hero-bg-green {
+  width: 100%;
+  height: 125px;
+  background-color: $ora-green;
+
+  @media #{$tablet-only} {
+    height: 175px;
+  }
+
+  @media #{$laptop-up} {
+    height: 200px;
+  }
+}
