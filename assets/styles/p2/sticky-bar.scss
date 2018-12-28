@@ -11,6 +11,10 @@
 
 .ora-sticky-buttons {
   display: flex;
+
+  @media #{$phone-only} {
+    width: 100%;
+  }
 }
 
 .ora-sticky-button {
@@ -22,6 +26,11 @@
   padding: 10px;
   transition: all .4s;
 
+  @media #{$phone-only} {
+    width: 33.3%;
+    flex-direction: column;
+  }
+
   &:hover {
     background-color: darken($ora-green, 10%);
   }
@@ -32,10 +41,19 @@
     font-size: 26px;
     color: $ora-darkgrey;
     margin-right: 8px;
+
+    @media #{$phone-only} {
+      margin-right: 0;
+      margin-top: 5px;
+    }
   }
 
   &.--phone {
     border-left: 1px solid $white;
+
+    @media #{$phone-only} {
+      border: none;
+    }
   }
 
   &.--chat {
@@ -52,6 +70,10 @@
     &:hover {
       background-color: darken($white, 10%);
     }
+
+    .ora-sticky-button-hidden {
+      color: $ora-darkgrey;
+    }
   }
 }
 
@@ -65,5 +87,20 @@
 
   .ora-sticky-button-text-macro {
     font-size: 22.5px;
+  }
+
+  @media #{$phone-only} {
+    display: none;
+  }
+}
+
+.ora-sticky-button-hidden {
+  display: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3px;
+
+  @media #{$phone-only} {
+    display: block;
   }
 }
