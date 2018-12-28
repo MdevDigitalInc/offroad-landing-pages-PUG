@@ -1,0 +1,115 @@
+.ora-header {
+  width: 100%;
+  position: relative;
+  background-color: $ora-darkgrey;
+  display: flex;
+  justify-content: center;
+}
+
+.ora-header-content {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  
+  @media #{$tablet-only} {
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 8% 0;
+  }
+
+  @media #{$phone-only} {
+    flex-direction: column;
+    padding: 25px 5% 0;
+  }
+}
+
+.ora-header-logo {
+  width: 175px;
+  height: 115px;
+  background-image: url('../images/ora-logo.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ora-header-info {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$laptop-up} {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.ora-header-contact {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$phone-only} {
+    align-items: center;
+  }
+
+  @media #{$tablet-only} {
+    margin: 0 0 20px;
+    align-items: flex-end;
+  }
+
+  @media #{$laptop-only} {
+    margin: 0 50px;
+  }
+
+  @media #{$desktop-up} {
+    margin: 0 100px;
+  }
+
+  .ora-header-contact-phone {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .ora-header-contact-hours {
+    font-size: 20px;
+    font-weight: 600;
+    color: $ora-green;
+  }
+}
+
+.ora-header-quote {
+  background-image: url('../images/p2/free-quote-1line.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 400px;
+  height: 0;
+  padding-top: 8%;
+
+  @media #{$phone-only} {
+    background-image: url('../images/p2/free-quote-2lines.png');
+  }
+}
+
+.ora-header-socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  cursor: pointer;
+  margin-top: 10px;
+
+  @media #{$tablet-only} {
+    margin-top: 5px;
+  }
+
+  a {
+    font-size: 20px;
+    transition: all .4s;
+
+    &:nth-child( n+2 ) {
+      margin-left: 25px;
+    }
+
+    &:hover {
+      color: darken($white, 20%);
+    }
+  }
+}
