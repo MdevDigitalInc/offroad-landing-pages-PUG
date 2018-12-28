@@ -67,12 +67,11 @@
   padding: vw-phone(15) 1vw;
 
   @media #{$tablet-up} {
-    font-size: 18.5px;
+    font-size: 22px;
     padding: vw-tablet(20) 1vw;
   }
 
   @media #{$tablet-lnd-only} {
-    font-size: 18.5px;
     padding: vw-laptop(13) 1vw;
   }
 
@@ -92,6 +91,15 @@
   &.--light {
     background: $ora-green;
     color: $ora-darkgrey;
+
+    &:hover {
+      background: darken($ora-green, 10%);
+    }
+  }
+
+  &.--lighter {
+    background: $ora-green;
+    color: $white;
 
     &:hover {
       background: darken($ora-green, 10%);
