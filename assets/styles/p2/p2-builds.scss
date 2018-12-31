@@ -8,10 +8,11 @@
   display: flex;
   justify-content: center;
   background-color: $ora-darkgrey;
-  padding: 25px 0;
+  padding: 25px 5vw;
+  text-align: center;
 
   @media #{$tablet-up} {
-    padding: 50px 0;
+    padding: 50px 8vw;
   }
 }
 
@@ -21,6 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 215px;
   
   @media #{$tablet-only} {
     height: 500px;
@@ -73,6 +75,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 25px 5vw;
+
+  @media #{$tablet-only} {
+    padding: 35px 20px 50px 50px;
+  }
 
   @media #{$laptop-only} {
     padding: 35px 20px 0 50px;
