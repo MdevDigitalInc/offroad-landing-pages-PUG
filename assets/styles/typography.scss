@@ -186,3 +186,11 @@ ul.--void {
   }
 }
 
+.u-newh2 {
+  color: $ora-green;
+  font-size: 30.5px;
+
+  @media #{$tablet-up} {
+    font-size: 46px;
+  }
+}
