@@ -47,6 +47,10 @@
     padding-top: 15px;
   }
 
+  @media #{$tablet-only} {
+    padding-top: 0;
+  }
+
   .ora-dream-hero-bigtext {
     display: block;
     z-index: 7;
@@ -89,7 +93,7 @@
   margin-top: 5px;
 
   @media #{$tablet-up} {
-    margin-top: 25px;
+    margin-top: 0;
   }
 
   @media #{$laptop-up} {
@@ -102,9 +106,10 @@
   .ora-dream-hero-image {
     display: block;
     z-index: 7;
-    width: 700px;
+    width: 100%;
     max-width: 45vw;
-    height: 520px;
+    height: 0;
+    padding-top: 30.12%;
     background-image: url('../images/p2/dreamhero/hero-jeep-cutout.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -113,14 +118,18 @@
 
     @media #{$phone-only} {
       max-width: 90vw;
-      height: 200px;
+      height: 0;
       margin-top: 35px;
+      padding-top: 60.12%;
+      width: 100%;
     }
 
     @media #{$tablet-only} {
-      max-width: 60vw;
-      height: 375px;
-      margin-top: 25px;
+      max-width: 70vw;
+      height: 0;
+      margin-top: 0;
+      padding-top: 55%;
+      width: 100%;
     }
 
     @media #{$laptop-up} {
@@ -173,7 +182,7 @@
 
 .ora-dream-hero-bg-grid-item {
   width: 50%;
-  height: 175px;
+  height: vw-phone(175);
   background-color: #202020;
   background-size: cover;
   background-repeat: no-repeat;
@@ -210,7 +219,7 @@
   background-color: $ora-green;
 
   @media #{$tablet-only} {
-    height: 175px;
+    height: vw-tablet(100);
   }
 
   @media #{$laptop-up} {
