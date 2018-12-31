@@ -22,6 +22,10 @@
 .ora-split-left {
   width: 100%;
 
+  @media #{$phone-only} {
+    padding: 50px 0;
+  }
+
   @media #{$tablet-only} {
     padding: 60px 0 85px;
   }
@@ -33,6 +37,12 @@
 
 .ora-split-right {
   width: 100%;
+
+  @media #{$tablet-up} {
+    .ora-title-line {
+      width: 350px;
+    }
+  }
 
   @media #{$laptop-up} {
     width: 50%;
