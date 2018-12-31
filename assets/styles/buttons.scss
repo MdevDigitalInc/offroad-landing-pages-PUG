@@ -63,26 +63,24 @@
   background: $ora-green;
   color: $ora-darkgrey;
   transition: .4s;
-  font-size: vw-phone(16);
+  font-size: 21px;
   padding: vw-phone(15) 1vw;
 
   @media #{$tablet-up} {
-    font-size: vw-tablet(18.5);
+    font-size: 22px;
     padding: vw-tablet(20) 1vw;
   }
 
   @media #{$tablet-lnd-only} {
-    font-size: vw-tablet(18.5);
     padding: vw-laptop(13) 1vw;
   }
 
   @media #{$laptop-up} {
-    font-size: vw-laptop(27);
+    font-size: 27px;
     padding: vw-laptop(13) 1vw;
   }
 
   @media #{$desktop-up} {
-    font-size: vw-desktop(27);
     padding: vw-desktop(13) 1vw;
   }
 
@@ -93,6 +91,15 @@
   &.--light {
     background: $ora-green;
     color: $ora-darkgrey;
+
+    &:hover {
+      background: darken($ora-green, 10%);
+    }
+  }
+
+  &.--lighter {
+    background: $ora-green;
+    color: $white;
 
     &:hover {
       background: darken($ora-green, 10%);
