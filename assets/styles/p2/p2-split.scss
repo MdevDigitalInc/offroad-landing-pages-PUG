@@ -1,0 +1,56 @@
+.ora-split {
+  width: 100%;
+  position: relative;
+  background-color: $ora-darkgrey;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media #{$tablet-only} {
+    padding: 0 8%;
+  }
+
+  @media #{$laptop-up} {
+    padding: 25px 16% 0;
+  }
+
+  @media #{$desktop-up} {
+    padding: 5vh 20% 0;
+  }
+}
+
+.ora-split-left {
+  width: 50%;
+}
+
+.ora-split-right {
+  width: 50%;
+
+  @media #{$laptop-up} {
+    width: 50%;
+    padding: 0 0 0 100px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.--bigtext {
+  font-size: 18px;
+
+  @media #{$tablet-up} {
+    font-size: 25px;
+  }
+}
+
+.ora-checkbox {
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/p2/check-square-regular.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: inline-block;
+  margin-right: 10px;
+}

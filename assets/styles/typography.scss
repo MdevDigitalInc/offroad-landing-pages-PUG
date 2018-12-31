@@ -30,10 +30,8 @@ h6,.h6, {
 
 // Responsive Font Size Maps
 $p-font-sizes: (
-  null  : vw-phone(14),
-  $tablet-up: vw-tablet(16),
-  $laptop-up: vw-laptop(20),
-  $desktop-up: vw-desktop(20)
+  null  : 16px,
+  $laptop-up: 19px
 );
 
 $h1-font-sizes: (
@@ -44,10 +42,8 @@ $h1-font-sizes: (
 );
 
 $h2-font-sizes: (
-  null  : vw-phone(20),
-  $tablet-up: vw-tablet(24),
-  $laptop-up: vw-laptop(24),
-  $desktop-up: vw-desktop(24)
+  null  : 20px,
+  $tablet-up: 24px
 );
 
 $h3-font-sizes: (
@@ -104,6 +100,7 @@ p {
   line-height: 110%;
   font-weight: 400;
   @include font-size($p-font-sizes);
+  padding-bottom: 10px;
 }
 
 h1,
@@ -168,5 +165,16 @@ em {
 
   @media #{$laptop-up} {
     display: inline;
+  }
+}
+
+ul.--void {
+
+  li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
   }
 }
