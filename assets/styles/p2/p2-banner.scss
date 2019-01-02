@@ -1,0 +1,108 @@
+.ora-banner {
+  width: 100%;
+  position: relative;
+}
+
+.ora-banner-bg-strip {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.ora-banner-bg-strip-item {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: $ora-darkgrey;
+  height: 250px;
+
+  @media #{$phone-only} {
+    &:nth-child( 1 ) {
+      display: none;
+    }
+
+    &:nth-child( n+3 ) {
+      display: none;
+    }
+  }
+
+  @media #{$tablet-only} {
+    width: 100 / 3 * 1%;
+    height: 200px;
+
+    &:nth-child( n+4 ) {
+      display: none;
+    }
+  }
+
+  @media #{$laptop-up} {
+    width: 20%;
+    height: 275px;
+  }
+
+  &.--liftkits {
+    background-image: url('../images/p2/banner/lift-kits.png');
+  }
+
+  &.--flare {
+    background-image: url('../images/p2/banner/flare.png');
+  }
+
+  &.--recovery {
+    background-image: url('../images/p2/banner/recovery-gear.png');
+  }
+
+  &.--tire {
+    background-image: url('../images/p2/banner/tire.png');
+  }
+
+  &.--tires {
+    background-image: url('../images/p2/banner/tires.png');
+  }
+}
+
+.ora-banner-fg-strip {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  bottom: 25px;
+  padding: 5px 8% 15px;
+
+  @media #{$laptop-only} {
+    padding: 5px 8% 15px;
+  }
+
+  @media #{$desktop-up} {
+    padding: 5px 16% 15px;
+  }
+}
+
+.ora-banner-fg-green {
+  width: 100%;
+  position: absolute;
+  opacity: .9;
+  z-index: -1;
+  background-color: $ora-green;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.ora-banner-fg-words {
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media #{$laptop-up} {
+    justify-content: space-around;
+  }
+
+  span {
+    font-weight: 600;
+    padding-top: 10px;
+    padding-right: 25px;
+  }
+}
