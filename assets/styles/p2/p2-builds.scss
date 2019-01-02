@@ -1,0 +1,136 @@
+.ora-builds {
+  width: 100%;
+  position: relative;
+  background-color: $ora-grey;
+}
+
+.ora-builds-header {
+  display: flex;
+  justify-content: center;
+  background-color: $ora-darkgrey;
+  padding: 25px 5vw;
+  text-align: center;
+
+  @media #{$tablet-up} {
+    padding: 50px 8vw;
+  }
+}
+
+.ora-builds-image {
+  width: 100%;
+  background-color: $ora-grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 215px;
+  
+  @media #{$tablet-only} {
+    height: 500px;
+  }
+
+  @media #{$laptop-only} {
+    height: 450px;
+  }
+
+  @media #{$desktop-up} {
+    height: 500px;
+  }
+
+  &.--one {
+    background-image: url('../images/p2/jeep-stage-1.png');
+  }
+
+  &.--two {
+    background-image: url('../images/p2/jeep-stage-2.png');
+  }
+
+  &.--three {
+    background-image: url('../images/p2/jeep-stage-3.png');
+  }
+}
+
+.ora-builds-tier {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ora-builds-tier-left {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+}
+
+.ora-builds-tier-right {
+  width: 100%;
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+}
+
+.ora-builds-tier-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 5vw;
+
+  @media #{$tablet-only} {
+    padding: 35px 20px 50px 50px;
+  }
+
+  @media #{$laptop-only} {
+    padding: 35px 20px 0 50px;
+  }
+
+  @media #{$desktop-up} {
+    padding: 50px 25px 0 100px;
+  }
+
+  &.--left {
+    @media #{$laptop-only} {
+      padding: 35px 20px 0 16vw;
+    }
+  
+    @media #{$desktop-up} {
+      padding: 50px 25px 0 20vw;
+    }
+  }
+
+  .ora-tier-subtitle {
+    color: $ora-green;
+    font-weight: 600;
+    font-size: 20px;
+
+    @media #{$tablet-up} {
+      font-size: 24px;
+    }
+  }
+
+  .ora-tier-title {
+    font-weight: 300;
+    font-size: 30px;
+
+    @media #{$tablet-up} {
+      font-size: 46px;
+      margin-bottom: 5px;
+    }
+  }
+
+  span.--bigtext {
+    padding-bottom: 25px;
+  }
+
+  ul {
+    li {
+      font-size: 20px;
+
+      @media #{$tablet-up} {
+        font-size: 24px;
+      }
+    }
+  }
+}
+

@@ -30,10 +30,8 @@ h6,.h6, {
 
 // Responsive Font Size Maps
 $p-font-sizes: (
-  null  : vw-phone(14),
-  $tablet-up: vw-tablet(16),
-  $laptop-up: vw-laptop(20),
-  $desktop-up: vw-desktop(20)
+  null  : 16px,
+  $laptop-up: 19px
 );
 
 $h1-font-sizes: (
@@ -44,10 +42,8 @@ $h1-font-sizes: (
 );
 
 $h2-font-sizes: (
-  null  : vw-phone(20),
-  $tablet-up: vw-tablet(24),
-  $laptop-up: vw-laptop(24),
-  $desktop-up: vw-desktop(24)
+  null  : 20px,
+  $tablet-up: 24px
 );
 
 $h3-font-sizes: (
@@ -70,10 +66,8 @@ $h5-font-sizes: (
 );
 
 $h6-font-sizes: (
-  null  : vw-phone(14),
-  $tablet-up: vw-tablet(16),
-  $laptop-up: vw-laptop(16),
-  $desktop-up: vw-desktop(16)
+  null  : 30px,
+  $tablet-up: 50px
 );
 
 // Links
@@ -104,6 +98,7 @@ p {
   line-height: 110%;
   font-weight: 400;
   @include font-size($p-font-sizes);
+  padding-bottom: 10px;
 }
 
 h1,
@@ -135,6 +130,8 @@ h5,
 h6,
 .h6 {
   @include font-size($h6-font-sizes);
+  font-weight: 300;
+  line-height: 125%;
 }
 
 .mdev-main-nav-links {
@@ -168,5 +165,32 @@ em {
 
   @media #{$laptop-up} {
     display: inline;
+  }
+}
+
+.ora-br-phone {
+  display: none;
+
+  @media #{$phone-only} {
+    display: inline;
+  }
+}
+
+ul.--void {
+
+  li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.u-newh2 {
+  color: $ora-green;
+  font-size: 30.5px;
+
+  @media #{$tablet-up} {
+    font-size: 46px;
   }
 }
