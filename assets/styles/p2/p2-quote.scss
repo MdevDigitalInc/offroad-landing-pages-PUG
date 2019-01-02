@@ -1,0 +1,98 @@
+.ora-quote {
+  width: 100%;
+  position: relative;
+  background-color: $ora-darkgrey;
+}
+
+.ora-quote-content {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: $white;
+  z-index: 5;
+  position: relative;
+  display: flex;
+
+  @media #{$tablet-only} {
+    width: 90%;
+  }
+
+  @media #{$laptop-only} {
+    width: 800px;
+  }
+
+  @media #{$desktop-up} {
+    width: 950px;
+  }
+}
+
+.ora-quote-bg {
+  width: 100%;
+  background-color: $ora-grey;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  z-index: 2;
+}
+
+.ora-quote-content-left {
+  width: 50%;
+  background-color: $ora-green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/p2/jeep-offroad-form.png');
+
+  @media #{$phone-only} {
+    display: none;
+  }
+}
+
+.ora-quote-content-right {
+  width: 100%;
+  padding: 25px 25px 35px;
+
+  @media #{$tablet-up} {
+    width: 50%;
+    padding: 25px 25px 35px;
+  }
+
+  @media #{$laptop-up} {
+    padding: 35px 35px 40px;
+  }
+
+  .ora-quote-pretitle {
+    font-weight: 600;
+  }
+}
+
+// QUOTE BLURB STYLES
+
+.ora-quote-blurb {
+  width: 100%;
+  position: relative;
+  background: $ora-grey;
+}
+
+.ora-quote-blurb-content {
+  width: 800px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 25px;
+}
+
+.ora-quote-blurb-left {
+  width: 100%;
+  background-image: url('../images/p2/build-your-dream-jeep-stacked.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+
+  @media #{$laptop-up} {
+    width: 275px;
+  }
+}
+
+.ora-quote-blurb-right {
+  width: 50%;
+}
