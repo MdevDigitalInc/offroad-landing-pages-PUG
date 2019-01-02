@@ -268,6 +268,13 @@ html
             p.u-darkgrey
               |Tell us about the aftermarket parts you want to add to your ride. We’ll provide a free quote and advice on the best options to enhance your style and performance.
             //- Implement Forms Here !!!
+            form.ora-request-form(id="ora-request" action="https://api.formbucket.com/f/buk_cDsNjBua432sgBgp8DnH0vaA" method="post" target="_blank")
+              input(type="text" required="true" name="name" id="ora-name" placeholder="Name*")
+              input(type="text" required="true" name="email" id="ora-email" placeholder="Email*")
+              textarea(type="text" required="true" name="message" id="ora-message" placeholder="Message*")
+              button.ora-btn.--lighter(type="submit")
+                |Submit Request
+
         .ora-quote-bg
       // Quote Blurb Section ----------------------------------------:
       .ora-quote-blurb
@@ -413,6 +420,34 @@ html
           a.ora-img-box(href="https://www.financeit.ca/en/direct/payment-plan/cD0xaFdTS3M3NmNMbVI5d0cwcEtGSWV3JnM9MCZ2PTQmZj0mdD0mbD0mYT0yMjczNTM=/apply" title="Financing link")
             img(src="../../assets/images/financeit-ad.png" alt="Apply for financing")
       // Mailing Section ----------------------------------------:
+      section.ora-mailing-list
+        .ora-mailing-wrapper.u-text-center
+          .ora-mailing-header
+            |JOIN THE OFF ROAD ADDICTION MAILING LIST
+          .ora-mailing-subheader.--second-heading
+            |Sign up for in-store savings and keep up-to-date with Off Road Community Events.
+          #mc_embed_signup
+            form#mc-embedded-subscribe-form.validate(action="https://offroad-addiction.us9.list-manage.com/subscribe/post?u=fa835280d7e52207971079617&amp;id=961e94c97c" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+              #mc_embed_signup_scroll.flex.flex-hor-between.flex-vert-center
+                input#mce-FNAME(type="text" value="" name="FNAME" placeholder="First Name")
+                input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="Email Address *")
+                //-
+                  .mc-field-group
+                    label(for="mce-LNAME")
+                      |Last Name&nbsp;
+                    input#mce-LNAME(type="text" value="" name="LNAME" placeholder="Last Name")
+                  .mc-field-group
+                    label(for="mce-MMERGE5")
+                      |Name&nbsp;
+                    input#mce-MMERGE5(type="text" value="" name="MMERGE5" placeholder="Full Name")
+                #mce-responses.clear
+                  #mce-error-response.response(style="display:none")
+                  #mce-success-response.response(style="display:none") <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                div(style="position: absolute; left: -5000px;" aria-hidden="true")
+                  input(type="text" name="b_fa835280d7e52207971079617_961e94c97c" tabindex="-1" value="")
+                .clear
+                  input#mc-embedded-subscribe.button.ora-btn(style="border: none;" type="submit" value="SIGN UP" name="subscribe")
+
       // Footer Section ----------------------------------------:
       footer.ora-footer
         .ora-footer-about
@@ -448,4 +483,4 @@ html
                 i.fab.fa-twitter
               a.zuc-social-link(href="/" title="todo")
                 i.fab.fa-youtube
-              
+

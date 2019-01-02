@@ -7,7 +7,8 @@ form {
 /* stylelint-disable */
 /* Disabled because it is valid and I need this level of control*/
 
-input {
+input,
+textarea {
   &[type="text"],
   &[type="email"],
   &[type="tel"],
@@ -36,7 +37,7 @@ input {
     }
 
     @media #{$desktop-up} {
-      margin: vw-desktop(5) 0 0;
+      margin: vw-desktop(15) 0 0;
       padding: vw-desktop(10) vw-desktop(15);
       font-size: vw-desktop(20.5);
     }
@@ -67,6 +68,83 @@ input {
   }
 }
 
+// Form Overrides
+.ora-request-form {
+  input,
+  textarea {
+    background: $white;
+    color: $black;
+
+    &::placeholder {
+      font-weight: 700;
+      color: $black;
+    }
+  }
+
+  textarea {
+    min-height: 150px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    @media #{$tablet-up} {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+
+#mc_embed_signup_scroll {
+  margin-top: 25px;
+  flex-wrap: wrap;
+
+  @media #{$tablet-up} {
+    flex-wrap: nowrap;
+  }
+
+  input:not(.button) {
+    background: $white;
+    color: $black;
+    border-radius: 4px;
+    height: 50px;
+    border: none;
+    display: block;
+    margin: 10px 0;
+
+    @media #{$tablet-up} {
+      margin: 0 15px 0 0;
+    }
+
+    &::placeholder {
+      font-weight: 500;
+    }
+  }
+
+  input#mce-FNAME {
+    width: 100%;
+
+    @media #{$tablet-up} {
+      width: 40%;
+    }
+  }
+
+  .button {
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+
+    @media #{$tablet-up} {
+      margin: 0;
+      width: auto;
+    }
+  }
+
+  .clear {
+    @media #{$phone-only} {
+      width: 100%;
+    }
+  }
+}
 /* stylelint-enable */
 
 /* Form Scaffolding */
