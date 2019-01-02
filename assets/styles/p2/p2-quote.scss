@@ -73,26 +73,62 @@
 }
 
 .ora-quote-blurb-content {
-  width: 800px;
   position: relative;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 50px 25px;
+  padding: 25px 8%;
+  width: 100%;
+
+  @media #{$laptop-up} {
+    padding: 50px 25px;
+    width: 800px;
+  }
 }
 
 .ora-quote-blurb-left {
   width: 100%;
-  background-image: url('../images/p2/build-your-dream-jeep-stacked.png');
+  background-image: url('../images/p2/build-your-dream-jeep-verticalish.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
   background-position: center center;
+
+  @media #{$phone-only} {
+    height: 100px;
+  }
+
+  @media #{$tablet-only} {
+    width: 600px;
+    height: 125px;
+  }
 
   @media #{$laptop-up} {
     width: 275px;
+    background-image: url('../images/p2/build-your-dream-jeep-stacked.png');
   }
 }
 
 .ora-quote-blurb-right {
-  width: 50%;
+  width: 100%;
+
+  @media #{$phone-only} {
+    margin-top: 15px;
+  }
+  
+  @media #{$tablet-only} {
+    margin-top: 25px;
+  }
+
+  @media #{$laptop-up} {
+    width: 50%;
+  }
+
+  p {
+    font-size: 16px;
+
+    @media #{$tablet-up} {
+      font-size: 24px;
+    }
+  }
 }
