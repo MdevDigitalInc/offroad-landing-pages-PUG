@@ -1,0 +1,40 @@
+// Mailing List
+.ora-mailing-list {
+  width: 100%;
+  background-image: url('../images/jeep-community.png'); // Fallback image default
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $white;
+  padding: 160px 0;
+  margin-top: 7vw;
+}
+
+.ora-mailing-wrapper {
+  width: 90%;
+  margin: 0 auto;
+
+  @media #{$tablet-up} {
+    width: 65%;
+  }
+
+  .ora-mailing-header {
+    font-family: $spec-font;
+    font-size: 46px;
+    line-height: 1.15;
+    font-weight: 400;
+  }
+
+  .ora-mailing-subheader {
+    font-family: $spec-font;
+    width: 100%;
+    display: block;
+    margin: 10px auto 0;
+    font-size: 30px;
+    line-height: normal;
+
+    @media #{$tablet-up} {
+      width: 50%;
+    }
+  }
+}
+

@@ -65,6 +65,9 @@
   transition: .4s;
   font-size: 21px;
   padding: vw-phone(15) 1vw;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
 
   @media #{$tablet-up} {
     font-size: 22px;
@@ -126,17 +129,7 @@
 }
 
 #mc-embedded-subscribe {
-  margin: vw-phone(13) 0 0;
-
-  @media #{$tablet-up} {
-    margin: vw-tablet(13) 0 0;
-  }
-
-  @media #{$laptop-up} {
-    margin: vw-laptop(13) 0 0;
-  }
-
-  @media #{$desktop-up} {
-    margin: vw-desktop(13) 0 0;
-  }
+  border-radius: 4px;
+  color: $white;
+  height: 50px;
 }
