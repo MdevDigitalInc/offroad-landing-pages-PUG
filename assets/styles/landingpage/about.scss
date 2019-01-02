@@ -166,6 +166,12 @@
 
 .ora-list-box {
 
+  @media #{$phone-only} {
+    .ora-title-line {
+      width: 70%;
+    }
+  }
+
   margin-top: vw-phone(15);
 
   @media #{$tablet-up} {
