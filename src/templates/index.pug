@@ -63,11 +63,11 @@ html
               h3
                 |get started with <br class="ora-br-laptop">a <em>free quote</em> on parts, accessories or custom builds
               .ora-btn-box
-                a.ora-btn.--dark(href="http://offroadaddict.simplybook.me/" title="Book a free consultation")
+                a.ora-btn.--dark(href="#quote" title="Book a free consultation")
                   span
                     |GET YOUR FREE QUOTE&nbsp;
                   i.fas.fa-angle-right
-                a.ora-btn.--lighter(href="http://offroadaddict.simplybook.me/" title="Book a free consultation")
+                a.ora-btn.--lighter(href="#quote" title="Book a free consultation")
                   span
                     |GET YOUR FREE QUOTE&nbsp;
                   i.fas.fa-angle-right
@@ -86,7 +86,7 @@ html
           p
             |We have a huge selection of aftermarket parts and Jeep accessories for off road enthusiasts at our superstore location in St. Thomas, ON. Not sure what you need? Our experts are always here to help! We also install everything we sell - our certified technicians can make your dream Jeep a reality.
           span.--bigtext
-            |Get in touch today so we can starting planning your build!
+            |Get in touch today so we can start planning your build!
         .ora-split-right
           h2
             |why shop at off road addiction?
@@ -111,18 +111,18 @@ html
       // Builds Section ----------------------------------------:
       .ora-builds
         .ora-builds-header
-          h6
+          h6.u-main-font.u-kustom-text
             |Start planning your <br class="ora-br-phone"><b>CUSTOM BUILD</b>
         .ora-builds-tier
           .ora-builds-tier-left
             .ora-builds-image.--one
           .ora-builds-tier-right
             .ora-builds-tier-info
-              span.ora-tier-subtitle.u-uppercase
+              span.ora-tier-subtitle.u-uppercase.u-phone-bottom-padding
                 |stage 1 build
               span.ora-tier-title
                 |START WITH THE BASICS
-              span.--bigtext
+              span.--bigtext.u-seventy
                 |Add a small lift and bigger tires to start feeding your addiction.
               ul.--void
                 li
@@ -140,11 +140,11 @@ html
           .ora-builds-tier
           .ora-builds-tier-left
             .ora-builds-tier-info.--left
-              span.ora-tier-subtitle.u-uppercase
+              span.ora-tier-subtitle.u-uppercase.u-phone-bottom-padding
                 |stage 2 build
               span.ora-tier-title
-                |LIGHT IT HIGHER
-              span.--bigtext
+                |LIFT IT HIGHER
+              span.--bigtext.u-seventy
                 |Take it to the next level with a bigger lift, wider tire stance and accessories that suit your style.
               ul.--void
                 li
@@ -174,7 +174,7 @@ html
             .ora-builds-image.--three
           .ora-builds-tier-right
             .ora-builds-tier-info
-              span.ora-tier-subtitle.u-uppercase
+              span.ora-tier-subtitle.u-uppercase.u-phone-bottom-padding
                 |stage 3 build
               span.ora-tier-title
                 |NO LIMITS
@@ -218,7 +218,7 @@ html
             .ora-title-line
           .ora-reviews-boxes
             .ora-review-box
-              h4
+              h4.u-main-font
                 |JK LIFTKIT &amp; SHOCKS
               p
                 |I had a Teraflex 2.5&quot; coil lift kit with Fox 2.0 Evolution shocks, and I honestly could not be happier with the service and the actual kit and shocks have far exceeded my expectations!
@@ -231,10 +231,10 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
             .ora-review-box
-              h4
+              h4.u-main-font
                 |LIFTS, WHEELS &amp; TIRES
               p
-                |I had a Teraflex 2.5&quot; coil lift kit with Fox 2.0 Evolution shocks, and I honestly could not be happier with the service and the actual kit and shocks have far exceeded my expectations!
+                |I love my truck and what you have done to it. If anyone wants to lift their truck, I’ll recommend they go to you, Off Road Addiction.
               span.ora-review-box-author
                 |Gerhard M.
               .ora-review-stars
@@ -244,10 +244,10 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
             .ora-review-box
-              h4
+              h4.u-main-font
                 |TURNED MY TRUCK INTO A DREAM
               p
-                |I had a Teraflex 2.5&quot; coil lift kit with Fox 2.0 Evolution shocks, and I honestly could not be happier with the service and the actual kit and shocks have far exceeded my expectations!
+                |I gave them the parts list and they not only found them, but put all the parts on with the matching paint. Great job guys. I’m in love with my truck.
               span.ora-review-box-author
                 |Rob M.
               .ora-review-stars
@@ -257,15 +257,15 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
       // Quote Section ----------------------------------------:
-      .ora-quote
+      .ora-quote#quote
         .ora-quote-content
           .ora-quote-content-left
           .ora-quote-content-right
             span.ora-quote-pretitle.u-darkgrey
               |GET YOUR
             h3.u-green
-              |FREE QUOTE NOW
-            p.u-darkgrey
+              |FREE QUOTE NOW:
+            p.u-darkgrey.u-quotetext
               |Tell us about the aftermarket parts you want to add to your ride. We’ll provide a free quote and advice on the best options to enhance your style and performance.
             //- Implement Forms Here !!!
             form.ora-request-form(id="ora-request" action="https://api.formbucket.com/f/buk_cDsNjBua432sgBgp8DnH0vaA" method="post" target="_blank")
@@ -273,7 +273,7 @@ html
               input(type="text" required="true" name="email" id="ora-email" placeholder="Email*")
               textarea(type="text" required="true" name="message" id="ora-message" placeholder="Message*")
               button.ora-btn.--lighter(type="submit")
-                |Submit Request
+                |SUBMIT REQUEST
 
         .ora-quote-bg
       // Quote Blurb Section ----------------------------------------:
@@ -412,7 +412,7 @@ html
                   li
                     |c.b. &amp; radio
           .ora-btn-box
-            a.ora-btn.--lighter(href="http://offroadaddict.simplybook.me/" title="Book a free consultation")
+            a.ora-btn.--lighter(href="#quote" title="Book a free consultation")
               span
                 |GET YOUR FREE QUOTE&nbsp;
               i.fas.fa-angle-right

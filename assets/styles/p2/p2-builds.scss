@@ -8,11 +8,11 @@
   display: flex;
   justify-content: center;
   background-color: $ora-darkgrey;
-  padding: 25px 5vw;
+  padding: 25px 1px;
   text-align: center;
 
   @media #{$tablet-up} {
-    padding: 50px 8vw;
+    padding: 75px 1px;
   }
 }
 

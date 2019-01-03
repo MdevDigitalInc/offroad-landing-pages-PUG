@@ -12,11 +12,11 @@
 
   @media #{$laptop-up} {
     flex-direction: row;
-    padding: vw-laptop(150) 14vw vw-laptop(90);
+    padding: vw-laptop(150) 20vw vw-laptop(90);
   }
 
   @media #{$desktop-up} {
-    padding: vw-desktop(150) 14vw vw-desktop(90);
+    padding: vw-desktop(150) 20vw vw-desktop(90);
   }
 }
 
