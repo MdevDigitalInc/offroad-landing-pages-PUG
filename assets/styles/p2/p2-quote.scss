@@ -7,7 +7,6 @@
 .ora-quote-content {
   max-width: 90%;
   margin: 0 auto;
-  background-color: $white;
   z-index: 5;
   position: relative;
   display: flex;
@@ -36,7 +35,6 @@
 
 .ora-quote-content-left {
   width: 50%;
-  background-color: $ora-green;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../images/p2/jeep-offroad-form.png');
@@ -48,6 +46,7 @@
 
 .ora-quote-content-right {
   width: 100%;
+  background: $white;
   padding: 25px 25px 35px;
 
   @media #{$tablet-up} {
@@ -61,7 +60,7 @@
 
   .ora-quote-pretitle {
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: block;
   }
 }
@@ -121,7 +120,7 @@
   @media #{$phone-only} {
     margin-top: 15px;
   }
-  
+
   @media #{$tablet-only} {
     margin-top: 25px;
   }

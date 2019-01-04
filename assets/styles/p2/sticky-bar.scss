@@ -25,6 +25,8 @@
   cursor: pointer;
   padding: 10px;
   transition: all .4s;
+  line-height: 1.1;
+  font-family: "Source Sans Pro", sans-serif;
 
   @media #{$phone-only} {
     width: 33.3%;

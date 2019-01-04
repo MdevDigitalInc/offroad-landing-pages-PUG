@@ -52,6 +52,12 @@
     }
   }
 
+  .ora-btn {
+    @media #{$laptop-up} {
+      width: auto;
+    }
+  }
+
   // About Right Section Styles
 
   .ora-about-right {

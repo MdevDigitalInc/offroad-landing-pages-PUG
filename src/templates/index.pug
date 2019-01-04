@@ -6,7 +6,7 @@ html
       // Sticky Bar ----------------------------------------:
       .ora-sticky-bar
         .ora-sticky-buttons
-          a(href="mailto:sales@offroad-addiction.com" title="Get in touch with OffRoad").ora-sticky-button.--email
+          a(href="#ora-request-form" title="Get in touch with OffRoad").ora-sticky-button.--email
             .ora-sticky-button-icon
               i.far.fa-envelope
             .ora-sticky-button-text
@@ -218,7 +218,7 @@ html
             .ora-title-line
           .ora-reviews-boxes
             .ora-review-box
-              h4.u-main-font
+              h4.u-main-font.u-bold
                 |TURNED MY TRUCK INTO A DREAM
               p
                 |I gave them the parts list and they not only found them, but put all the parts on with the matching paint. Great job guys. I’m in love with my truck.
@@ -232,8 +232,8 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
 
             .ora-review-box
-              h4.u-main-font
-                |JK LIFTKIT &amp; SHOCKS
+              h4.u-main-font.u-bold
+                |JK LIFT KIT &amp; SHOCKS
               p
                 |I had a Teraflex 2.5&quot; coil lift kit with Fox 2.0 Evolution shocks, and I honestly could not be happier with the service and the actual kit and shocks have far exceeded my expectations!
               span.ora-review-box-author
@@ -245,7 +245,7 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
             .ora-review-box
-              h4.u-main-font
+              h4.u-main-font.u-bold
                 |LIFTS, WHEELS &amp; TIRES
               p
                 |I love my truck and what you have done to it. If anyone wants to lift their truck, I’ll recommend they go to you, Off Road Addiction.
@@ -258,7 +258,7 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
       // Quote Section ----------------------------------------:
-      .ora-quote#quote
+      .ora-quote(id="ora-request-form")
         .ora-quote-content
           .ora-quote-content-left
           .ora-quote-content-right
@@ -274,7 +274,7 @@ html
               input(type="text" required="true" name="email" id="ora-email" placeholder="Email*")
               textarea(type="text" required="true" name="message" id="ora-message" placeholder="Message*")
               button.ora-btn.--lighter(type="submit")
-                |SUBMIT REQUEST
+                |SUBMIT
 
         .ora-quote-bg
       // Quote Blurb Section ----------------------------------------:
@@ -340,7 +340,7 @@ html
                   li
                     |interior accessories
                   li
-                    |storage solution
+                    |storage solutions
                   li
                     |cargo storage
               .ora-list-box

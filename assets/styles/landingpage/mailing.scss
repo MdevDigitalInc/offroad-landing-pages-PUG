@@ -20,12 +20,19 @@
   @media #{$laptop-up} {
     width: 65%;
   }
+  @media #{$desktop-up} {
+    width: 55%;
+  }
 
   .ora-mailing-header {
     font-family: $spec-font;
     font-size: 46px;
     line-height: 1.15;
     font-weight: 400;
+
+    @media #{$tablet-prt-only} {
+      font-size: 35px;
+    }
 
     @media #{$phone-only} {
       font-size: 30px;
@@ -43,7 +50,14 @@
       font-size: 18px;
     }
 
+    @media #{$tablet-prt-only} {
+      font-size: 27px;
+    }
+
     @media #{$laptop-up} {
+      width: 50%;
+    }
+    @media #{$desktop-up} {
       width: 50%;
     }
   }

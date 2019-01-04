@@ -96,7 +96,7 @@ $link-font-sizes: (
 /* Generate Responsive Sizing */
 
 p {
-  line-height: 110%;
+  line-height: 1.3;
   font-weight: 400;
   @include font-size($p-font-sizes);
   padding-bottom: 10px;
