@@ -107,3 +107,23 @@
     display: block;
   }
 }
+
+/*stylelint-disable*/
+.fb_customer_chat_bubble_pop_in { 
+  bottom: 1.8% !important; 
+  right: 8.8 !important;
+  transform: scale(.7, .7);
+  z-index: 1 !important; 
+   
+
+  @media #{tablet-up} {
+    bottom: 0pt !important; 
+    right: 80pt !important;
+    transform: scale(.9, .9);
+  }
+} 
+.fb_customer_chat_bubble_animated_no_badge { 
+  box-shadow : none !important; 
+  transition : none !important;
+}
+/*stylelint-enable*/
