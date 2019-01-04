@@ -116,7 +116,7 @@
   z-index: 1 !important; 
    
 
-  @media #{tablet-up} {
+  @media #{$tablet-up} {
     bottom: 0pt !important; 
     right: 80pt !important;
     transform: scale(.9, .9);
