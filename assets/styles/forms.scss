@@ -98,7 +98,7 @@ textarea {
   margin-top: 25px;
   flex-wrap: wrap;
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     flex-wrap: nowrap;
   }
 
@@ -111,7 +111,7 @@ textarea {
     display: block;
     margin: 10px 0;
 
-    @media #{$tablet-up} {
+    @media #{$laptop-up} {
       margin: 0 15px 0 0;
     }
 
@@ -123,7 +123,7 @@ textarea {
   input#mce-FNAME {
     width: 100%;
 
-    @media #{$tablet-up} {
+    @media #{$laptop-up} {
       width: 40%;
     }
   }
@@ -133,15 +133,16 @@ textarea {
     width: 100%;
     display: block;
 
-    @media #{$tablet-up} {
+    @media #{$laptop-up} {
       margin: 0;
       width: auto;
     }
   }
 
   .clear {
-    @media #{$phone-only} {
-      width: 100%;
+    width: 100%;
+    @media #{$laptop-up} {
+      width: auto;
     }
   }
 }
