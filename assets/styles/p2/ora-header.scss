@@ -4,14 +4,16 @@
   background-color: $ora-darkgrey;
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
+  padding: 15px 0;
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0,0,0,.4);
 }
 
 .ora-header-content {
   max-width: 100%;
   display: flex;
   align-items: center;
-  
+
   @media #{$tablet-only} {
     width: 100%;
     justify-content: space-between;
@@ -28,7 +30,7 @@
   max-width: 200px;
   width: 175px;
   height: 115px;
-  background-image: url('../images/ORA_LOGO_grey.svg');
+  background-image: url('../images/ORA_LOGO_grey.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
