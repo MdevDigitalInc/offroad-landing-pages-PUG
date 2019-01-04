@@ -61,6 +61,10 @@
   &.--chat {
     background-color: $white;
 
+    @media #{$tablet-up} {
+      padding-left: 56px;
+    }
+
     .ora-sticky-button-icon {
       color: $ora-green;
     }
@@ -69,12 +73,9 @@
       color: $ora-darkgrey;
     }
 
-    &:hover {
-      background-color: darken($white, 10%);
-    }
-
     .ora-sticky-button-hidden {
       color: $ora-darkgrey;
+      padding-top: 22px;
     }
   }
 }
