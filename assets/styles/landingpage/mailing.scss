@@ -13,8 +13,15 @@
   width: 90%;
   margin: 0 auto;
 
-  @media #{$tablet-up} {
+  @media #{$tablet-only} {
+    width: 80%;
+  }
+
+  @media #{$laptop-up} {
     width: 65%;
+  }
+  @media #{$desktop-up} {
+    width: 55%;
   }
 
   .ora-mailing-header {
@@ -22,17 +29,35 @@
     font-size: 46px;
     line-height: 1.15;
     font-weight: 400;
+
+    @media #{$tablet-prt-only} {
+      font-size: 35px;
+    }
+
+    @media #{$phone-only} {
+      font-size: 30px;
+    }
   }
 
   .ora-mailing-subheader {
-    font-family: $spec-font;
     width: 100%;
     display: block;
     margin: 10px auto 0;
     font-size: 30px;
     line-height: normal;
 
-    @media #{$tablet-up} {
+    @media #{$phone-only} {
+      font-size: 18px;
+    }
+
+    @media #{$tablet-prt-only} {
+      font-size: 27px;
+    }
+
+    @media #{$laptop-up} {
+      width: 50%;
+    }
+    @media #{$desktop-up} {
       width: 50%;
     }
   }

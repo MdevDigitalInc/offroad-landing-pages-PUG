@@ -151,3 +151,36 @@
 .u-green {
   color: $ora-green;
 }
+
+.u-main-font {
+  font-family: $main-font;
+}
+
+.u-kustom-text {
+  font-size: 36px;
+
+  @media #{$tablet-up} {
+    font-size: 44px;
+  }
+}
+
+.u-seventy {
+  width: 70%;
+}
+
+.u-phone-bottom-padding {
+  @media #{$phone-only} {
+    padding-bottom: 10px;
+  }
+}
+
+.u-quotetext {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  margin-top: 10px;
+}
+
+.u-fivepxbottom {
+  padding-bottom: 5px;
+}

@@ -7,15 +7,15 @@
   flex-wrap: wrap;
 
   @media #{$tablet-only} {
-    padding: 0 8%;
+    padding: 0 8% 5px;
   }
 
   @media #{$laptop-up} {
-    padding: 25px 16% 0;
+    padding: 25px 16% 5px;
   }
 
   @media #{$desktop-up} {
-    padding: 5vh 20% 0;
+    padding: 5vh 20% 5px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @media #{$laptop-up} {
     width: 50%;
-    padding: 0 0 0 100px;
+    padding: 0 0 0 115px;
   }
 
   h2 {
