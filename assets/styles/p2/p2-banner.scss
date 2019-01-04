@@ -66,14 +66,14 @@
   position: absolute;
   z-index: 5;
   bottom: 25px;
-  padding: 5px 8% 15px;
+  padding: 10px 8% 20px;
 
   @media #{$laptop-only} {
-    padding: 5px 8% 15px;
+    padding: 10px 8% 20px;
   }
 
   @media #{$desktop-up} {
-    padding: 5px 16% 15px;
+    padding: 10px 16% 20px;
   }
 }
 

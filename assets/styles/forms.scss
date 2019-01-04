@@ -74,16 +74,11 @@ textarea {
   textarea {
     background: $white;
     color: $black;
-
-    &::placeholder {
-      font-weight: 700;
-      color: $black;
-    }
   }
 
   textarea {
     min-height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   button {
@@ -98,20 +93,19 @@ textarea {
   margin-top: 25px;
   flex-wrap: wrap;
 
-  @media #{$tablet-up} {
+  @media #{$laptop-up} {
     flex-wrap: nowrap;
   }
 
   input:not(.button) {
     background: $white;
     color: $black;
-    border-radius: 4px;
     height: 50px;
     border: none;
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
 
-    @media #{$tablet-up} {
+    @media #{$laptop-up} {
       margin: 0 15px 0 0;
     }
 
@@ -123,25 +117,26 @@ textarea {
   input#mce-FNAME {
     width: 100%;
 
-    @media #{$tablet-up} {
+    @media #{$laptop-up} {
       width: 40%;
     }
   }
 
   .button {
-    margin: 10px 0;
+    margin: 5px 0;
     width: 100%;
     display: block;
 
-    @media #{$tablet-up} {
+    @media #{$laptop-up} {
       margin: 0;
       width: auto;
     }
   }
 
   .clear {
-    @media #{$phone-only} {
-      width: 100%;
+    width: 100%;
+    @media #{$laptop-up} {
+      width: auto;
     }
   }
 }
