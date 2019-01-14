@@ -103,37 +103,35 @@
       }
     }
 
-    // Todo Below ---
-
     &.--ram {
-      background-image: url('../images/p2/chevy/build-your-truck.png');
+      background-image: url('../images/p2/ram/build-your-ram.png');
 
       @media #{$laptop-up} {
-        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+        background-image: url('../images/p2/ram/build-your-dream-ram-horizontal.png');
       }
     }
 
     &.--toyota {
-      background-image: url('../images/p2/chevy/build-your-truck.png');
+      background-image: url('../images/p2/toyota/build-your-toyota.png');
 
       @media #{$laptop-up} {
-        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+        background-image: url('../images/p2/toyota/build-your-dream-toyota-horizontal.png');
       }
     }
 
     &.--ford {
-      background-image: url('../images/p2/chevy/build-your-truck.png');
+      background-image: url('../images/p2/ford/build-your-ford.png');
 
       @media #{$laptop-up} {
-        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+        background-image: url('../images/p2/ford/build-your-dream-ford-horizontal.png');
       }
     }
 
     &.--generic {
-      background-image: url('../images/p2/chevy/build-your-truck.png');
+      background-image: url('../images/p2/generic/build-your-truck.png');
 
       @media #{$laptop-up} {
-        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+        background-image: url('../images/p2/generic/build-your-dream-truck-horizontal.png');
       }
     }
   }
