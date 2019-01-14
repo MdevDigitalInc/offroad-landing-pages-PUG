@@ -92,6 +92,50 @@
       background-image: url('../images/p2/dreamhero/build-your-dream-jeep-horizontal.png');
       padding-top: 7.9%;
     }
+
+    // Dupe Modifiers
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/build-your-truck.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+      }
+    }
+
+    // Todo Below ---
+
+    &.--ram {
+      background-image: url('../images/p2/chevy/build-your-truck.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+      }
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/chevy/build-your-truck.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+      }
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/chevy/build-your-truck.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+      }
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/chevy/build-your-truck.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+      }
+    }
   }
 }
 
@@ -144,6 +188,29 @@
 
     @media #{$laptop-up} {
       order: 1;
+    }
+
+    // Dupe Modifiers
+    
+    &.--chevy {
+      background-image: url('../images/p2/chevy/hero-chevy-cutout.png');
+    }
+
+
+    &.--ford {
+      background-image: url('../images/p2/ford/hero-ford-cutout.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/hero-ram-cutout.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/hero-toyota-cutout.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/hero-truck-cutout.png');
     }
   }
 

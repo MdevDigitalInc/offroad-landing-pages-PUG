@@ -38,14 +38,62 @@
 
   &.--one {
     background-image: url('../images/p2/jeep-stage-1.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/chevy-101.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/ram-101.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/toyota-101.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/ford-101.png');
+    }
   }
 
   &.--two {
     background-image: url('../images/p2/jeep-stage-2.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/chevy-201.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/ram-201.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/toyota-201.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/ford-201.png');
+    }
   }
 
   &.--three {
     background-image: url('../images/p2/jeep-stage-3.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/chevy-301.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/ram-301.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/toyota-301.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/ford-301.png');
+    }
   }
 }
 

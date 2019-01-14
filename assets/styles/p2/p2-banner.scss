@@ -42,22 +42,122 @@
 
   &.--liftkits {
     background-image: url('../images/p2/banner/lift-kits.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/img-banner-1.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/img-banner-1.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/img-banner-1.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/img-banner-1.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/img-banner-1.png');
+    }
   }
 
   &.--flare {
     background-image: url('../images/p2/banner/flare.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/img-banner-2.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/img-banner-2.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/img-banner-2.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/img-banner-2.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/img-banner-2.png');
+    }
   }
 
   &.--recovery {
     background-image: url('../images/p2/banner/recovery-gear.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/img-banner-3.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/img-banner-3.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/img-banner-3.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/img-banner-3.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/img-banner-3.png');
+    }
   }
 
   &.--tire {
     background-image: url('../images/p2/banner/tire.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/img-banner-4.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/img-banner-4.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/img-banner-4.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/img-banner-4.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/img-banner-4.png');
+    }
   }
 
   &.--tires {
     background-image: url('../images/p2/banner/tires.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/img-banner-5.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/img-banner-5.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/img-banner-5.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/img-banner-5.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/img-banner-5.png');
+    }
   }
 }
 
