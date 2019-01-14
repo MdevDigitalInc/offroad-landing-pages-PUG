@@ -158,6 +158,26 @@ module.exports = {
       template: './src/templates/index.pug'
     }),
     new HtmlWebpackPlugin({
+      template: './src/templates/chevy.pug',
+      filename: 'chevy.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ford.pug',
+      filename: 'ford.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/generic.pug',
+      filename: 'generic.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/ram.pug',
+      filename: 'ram.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/templates/toyota.pug',
+      filename: 'toyota.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/templates/example.pug',
       filename: 'example.html'
     }),
