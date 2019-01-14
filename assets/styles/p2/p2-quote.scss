@@ -93,6 +93,10 @@
   width: 100%;
   position: relative;
   background: $ora-grey;
+
+  &.--generic {
+    background: $ora-darkgrey;
+  }
 }
 
 .ora-quote-blurb-content {

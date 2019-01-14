@@ -10,6 +10,8 @@
     padding-bottom: 100px;
   }
 
+  /* stylelint-disable */
+
   .ora-btn-box {
     width: 48%;
 
@@ -19,10 +21,18 @@
 
     a.--lighter {
       display: inline-block;
+
+      &.--generic {
+        display: none;
+      }
     }
 
     a.--dark {
       display: none;
+
+      &.--generic {
+        display: inline-block;
+      }
     }
 
     @media #{$laptop-up} {
@@ -30,10 +40,18 @@
 
       a.--lighter {
         display: none;
+
+        &.--generic {
+          display: inline-block;
+        }
       }
 
       a.--dark {
         display: inline-block;
+
+        &.--generic {
+          display: none;
+        }
       }
     }
 
@@ -41,6 +59,7 @@
       width: 100%;
     }
   }
+  /* stylelint-enable */
 }
 
 .ora-dream-hero-content {
@@ -300,6 +319,10 @@
   width: 100%;
   height: 100px;
   background-color: $ora-green;
+
+  &.--generic {
+    background-color: $ora-darkgrey;
+  }
 
   @media #{$tablet-only} {
     height: 135px;

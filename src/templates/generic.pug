@@ -54,18 +54,18 @@ html
       // Hero Section ----------------------------------------:
       .ora-dream-hero
         .ora-dream-hero-content
-          .ora-dream-hero-bigtext
+          .ora-dream-hero-bigtext.--generic
           .ora-dream-hero-content-sub
-            .ora-dream-hero-image
+            .ora-dream-hero-image.--generic
             .ora-dream-hero-textbox
               h3
                 |get started with <br class="ora-br-laptop">a <em>free quote</em> on parts, accessories or custom builds
               .ora-btn-box
-                a.ora-btn.--dark(href="#quote" title="Book a free consultation")
+                a.ora-btn.--dark.--generic(href="#quote" title="Book a free consultation")
                   span
                     |GET YOUR FREE QUOTE&nbsp;
                   i.fas.fa-angle-right
-                a.ora-btn.--lighter(href="#quote" title="Book a free consultation")
+                a.ora-btn.--lighter.--generic(href="#quote" title="Book a free consultation")
                   span
                     |GET YOUR FREE QUOTE&nbsp;
                   i.fas.fa-angle-right
@@ -75,17 +75,16 @@ html
             .ora-dream-hero-bg-grid-item.--mud
             .ora-dream-hero-bg-grid-item.--road
             .ora-dream-hero-bg-grid-item.--ice
-          .ora-dream-hero-bg-green
+          .ora-dream-hero-bg-green.--generic
       // Split Section ----------------------------------------:
       .ora-split
         .ora-split-left
           p
-            |Looking for a performance or style upgrade? Always wanted to take your Jeep off road but not sure where to start? Let us take care of all your off roading and customization needs. Go wherever the road takes you, and turn heads on the way in a custom 4x4 vehicle from Off Road Addiction.
+            |Looking to improve your vehicle’s performance or take on new off road challenges? Want to upgrade your style to turn heads around town? No matter what your ideal build looks like, the experts at Off Road Addiction are here to make your dream truck a reality.
           p
-            |We have a huge selection of aftermarket parts, and Jeep accessories for off road enthusiasts at our superstore location in St. Thomas, ON. Not sure what you need? Our experts are always here to help! We also install everything we sell - our ministry licensed technicians can make your dream Jeep a reality.
-
+            |We have a huge selection of aftermarket parts, and accessories for Jeeps, trucks and 4x4’s at our superstore in St. Thomas, ON. If you aren’t sure where to start, we are always here to help! We’ll provide advice on custom options for your make and model and will include a free quote for all parts and labour.
           span.--bigtext
-            |Get in touch today so we can start planning your build!
+            |We know you work hard. Your truck should work and play even harder! Get in touch for a free quote today.
         .ora-split-right
           h2
             |why shop at off road addiction?
@@ -111,105 +110,37 @@ html
       .ora-builds
         .ora-builds-header
           h6.u-main-font.u-kustom-text
-            |Start planning your <br class="ora-br-phone"><b>CUSTOM BUILD</b>
-        .ora-builds-tier
-          .ora-builds-tier-left
-            .ora-builds-image.--one
-          .ora-builds-tier-right
-            .ora-builds-tier-info
-              span.ora-tier-subtitle.u-uppercase.u-phone-bottom-padding
-                |JEEP 101
-              span.ora-tier-title
-                |JUST A TASTE
-              span.--bigtext.u-seventy
-                |Add a small lift, and bigger tires to start feeding your addiction.
-              ul.--void
-                li
-                  .ora-checkbox
-                  span
-                    |1.75” - 2.5” Lift Kit
-                li
-                  .ora-checkbox
-                  span
-                    |New Wheels
-                li
-                  .ora-checkbox
-                  span
-                    |Bigger Tires
-          .ora-builds-tier
-          .ora-builds-tier-left
-            .ora-builds-tier-info.--left
-              span.ora-tier-subtitle.u-uppercase.u-phone-bottom-padding
-                |JEEP 201
-              span.ora-tier-title
-                |NO TURNING BACK
-              span.--bigtext.u-seventy
-                |Take it to the next level with a bigger lift, wider tire stance, and accessories that suit your style.
-              ul.--void
-                li
-                  .ora-checkbox
-                  span
-                    |3”- 4” Suspension Lift Kit
-                li
-                  .ora-checkbox
-                  span
-                    |New Wheels
-                li
-                  .ora-checkbox
-                  span
-                    |Bigger Tires
-                li
-                  .ora-checkbox
-                  span
-                    |Front &amp; Rear Bumpers
-                li
-                  .ora-checkbox
-                  span
-                    |Rock Sliders
-          .ora-builds-tier-right
-            .ora-builds-image.--two
-        .ora-builds-tier
-          .ora-builds-tier-left
-            .ora-builds-image.--three
-          .ora-builds-tier-right
-            .ora-builds-tier-info
-              span.ora-tier-subtitle.u-uppercase.u-phone-bottom-padding
-                |JEEP 301
-              span.ora-tier-title
-                |FULLY ADDICTED
-              span.--bigtext
-                |Ready to challenge bigger &amp; badder obstacles  than ever before?
-              ul.--void
-                li
-                  .ora-checkbox
-                  span
-                    |4”- 6” Suspension Lift Kit
-                li
-                  .ora-checkbox
-                  span
-                    |New Wheels
-                li
-                  .ora-checkbox
-                  span
-                    |Even Bigger Tires
-                li
-                  .ora-checkbox
-                  span
-                    |Light Bars
-                li
-                  .ora-checkbox
-                  span
-                    |Fender Flares
-                li
-                  .ora-checkbox
-                  span
-                    |Bumpers &amp; Tire Carrier
-                li
-                  .ora-checkbox
-                  span
-                    |Winch
+            |Choose<br class="ora-br-phone"><b>YOUR RIDE</b>
+      // Quote Blurb Section ----------------------------------------:
+      .ora-quote-blurb.--generic
+        .ora-quote-blurb-content
+          .ora-quote-blurb-left.--generic
+          .ora-quote-blurb-right
+            p
+              |We only choose products that are tough enough to use on our own Jeeps - all backed by our quality in-house installations and service guarantee.
+            p
+              |Long drive to our state-of-the-art facility? Build your dream truck from the comfort of home without adding extra kilometers. If you live in Ontario, we’ll send our custom trailer to you. <b>Don’t wait, get a free quote today!</b>
+      // Quote Section ----------------------------------------:
+      .ora-quote(id="ora-request-form")
+        .ora-quote-content
+          .ora-quote-content-left.--generic
+          .ora-quote-content-right
+            span.ora-quote-pretitle.u-darkgrey
+              |GET YOUR
+            h3.u-green
+              |FREE QUOTE NOW:
+            p.u-darkgrey.u-quotetext
+              |Tell us about the aftermarket parts you want to add to your ride. We’ll provide a free quote and advice on the best options to enhance your style and performance.
+            //- Implement Forms Here !!!
+            form.ora-request-form(id="ora-request" action="https://api.formbucket.com/f/buk_cDsNjBua432sgBgp8DnH0vaA" method="post" target="_blank")
+              input(type="text" required="true" name="name" id="ora-name" placeholder="Name*")
+              input(type="text" required="true" name="email" id="ora-email" placeholder="Email*")
+              textarea(type="text" required="true" name="message" id="ora-message" placeholder="Message*")
+              button.ora-btn.--lighter(type="submit")
+                |SUBMIT
+        .ora-quote-bg
       // Review Section ----------------------------------------:
-      .ora-review
+      .ora-review.--generic
         .ora-review-left
           .ora-title
             h2
@@ -229,14 +160,13 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
-
             .ora-review-box
-              h4.u-main-font.u-bold
-                |JK LIFT KIT &amp; SHOCKS
+              h4.u-main-font.u-bold.u-uppercase
+                |an excellent place to do business
               p
-                |I had a Teraflex 2.5&quot; coil lift kit with Fox 2.0 Evolution shocks, and I honestly could not be happier with the service and the actual kit and shocks have far exceeded my expectations!
+                |Ryan and his team are professional in the service they provide, and they stand behind their product every time. If you want to learn about the best product for your application they will take the time to educate you and point you in the right direction.
               span.ora-review-box-author
-                |Jeff H.
+                |Brent K.
               .ora-review-stars
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
@@ -244,55 +174,26 @@ html
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
             .ora-review-box
-              h4.u-main-font.u-bold
-                |LIFTS, WHEELS &amp; TIRES
+              h4.u-main-font.u-bold.u-uppercase
+                |experts in what they do
               p
-                |I love my truck and what you have done to it. If anyone wants to lift their truck, I’ll recommend they go to you, Off Road Addiction.
+                |Having the entire vehicle stand out and sound great really gets people looking and taking notice. Well worth the investment!
               span.ora-review-box-author
-                |Gerhard M.
+                |Derek A.
               .ora-review-stars
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
                 img.ora-review-star(src="../../assets/images/icon-star.svg" alt="Small green star")
-      // Quote Section ----------------------------------------:
-      .ora-quote(id="ora-request-form")
-        .ora-quote-content
-          .ora-quote-content-left
-          .ora-quote-content-right
-            span.ora-quote-pretitle.u-darkgrey
-              |GET YOUR
-            h3.u-green
-              |FREE QUOTE NOW:
-            p.u-darkgrey.u-quotetext
-              |Tell us about the aftermarket parts you want to add to your ride. We’ll provide a free quote and advice on the best options to enhance your style and performance.
-            //- Implement Forms Here !!!
-            form.ora-request-form(id="ora-request" action="https://api.formbucket.com/f/buk_cDsNjBua432sgBgp8DnH0vaA" method="post" target="_blank")
-              input(type="text" required="true" name="name" id="ora-name" placeholder="Name*")
-              input(type="text" required="true" name="email" id="ora-email" placeholder="Email*")
-              textarea(type="text" required="true" name="message" id="ora-message" placeholder="Message*")
-              button.ora-btn.--lighter(type="submit")
-                |SUBMIT
-
-        .ora-quote-bg
-      // Quote Blurb Section ----------------------------------------:
-      .ora-quote-blurb
-        .ora-quote-blurb-content
-          .ora-quote-blurb-left
-          .ora-quote-blurb-right
-            p
-              |We only choose products that are tough enough to use on our own Jeeps - all backed by our quality in-house installations and service guarantee.
-            p
-              |Long drive to our state-of-the-art facility? Build your dream truck from the comfort of home without adding extra kilometers. If you live in Ontario, we’ll send our custom trailer to you. <b>Don’t wait, get a free quote today!</b>
       // Banner Section ----------------------------------------:
       .ora-banner
         .ora-banner-bg-strip
-          .ora-banner-bg-strip-item.--liftkits
-          .ora-banner-bg-strip-item.--flare
-          .ora-banner-bg-strip-item.--recovery
-          .ora-banner-bg-strip-item.--tire
-          .ora-banner-bg-strip-item.--tires
+          .ora-banner-bg-strip-item.--liftkits.--generic
+          .ora-banner-bg-strip-item.--flare.--generic
+          .ora-banner-bg-strip-item.--recovery.--generic
+          .ora-banner-bg-strip-item.--tire.--generic
+          .ora-banner-bg-strip-item.--tires.--generic
         .ora-banner-fg-strip
           .ora-banner-fg-green
           .ora-banner-fg-words
