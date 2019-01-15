@@ -10,6 +10,8 @@
     padding-bottom: 100px;
   }
 
+  /* stylelint-disable */
+
   .ora-btn-box {
     width: 48%;
 
@@ -19,10 +21,18 @@
 
     a.--lighter {
       display: inline-block;
+
+      &.--generic {
+        display: none;
+      }
     }
 
     a.--dark {
       display: none;
+
+      &.--generic {
+        display: inline-block;
+      }
     }
 
     @media #{$laptop-up} {
@@ -30,10 +40,18 @@
 
       a.--lighter {
         display: none;
+
+        &.--generic {
+          display: inline-block;
+        }
       }
 
       a.--dark {
         display: inline-block;
+
+        &.--generic {
+          display: none;
+        }
       }
     }
 
@@ -41,6 +59,7 @@
       width: 100%;
     }
   }
+  /* stylelint-enable */
 }
 
 .ora-dream-hero-content {
@@ -91,6 +110,48 @@
     @media #{$laptop-up} {
       background-image: url('../images/p2/dreamhero/build-your-dream-jeep-horizontal.png');
       padding-top: 7.9%;
+    }
+
+    // Dupe Modifiers
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/build-your-truck.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/chevy/build-your-dream-truck-horizontal.png');
+      }
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/build-your-ram.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/ram/build-your-dream-ram-horizontal.png');
+      }
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/build-your-toyota.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/toyota/build-your-dream-toyota-horizontal.png');
+      }
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/build-your-ford.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/ford/build-your-dream-ford-horizontal.png');
+      }
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/build-your-truck.png');
+
+      @media #{$laptop-up} {
+        background-image: url('../images/p2/generic/build-your-dream-truck-horizontal.png');
+      }
     }
   }
 }
@@ -144,6 +205,30 @@
 
     @media #{$laptop-up} {
       order: 1;
+    }
+
+    // Dupe Modifiers
+    
+    &.--chevy {
+      background-image: url('../images/p2/chevy/hero-chevy-cutout.png');
+    }
+
+
+    &.--ford {
+      background-image: url('../images/p2/ford/hero-ford-cutout.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/hero-ram-cutout.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/hero-toyota-cutout.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/hero-truck-cutout.png');
+      margin-right: 25px;
     }
   }
 
@@ -235,6 +320,10 @@
   width: 100%;
   height: 100px;
   background-color: $ora-green;
+
+  &.--generic {
+    background-color: $ora-darkgrey;
+  }
 
   @media #{$tablet-only} {
     height: 135px;

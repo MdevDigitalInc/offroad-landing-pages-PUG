@@ -42,6 +42,28 @@
   @media #{$phone-only} {
     display: none;
   }
+
+  // Dupe Mods
+
+  &.--chevy {
+    background-image: url('../images/p2/chevy/chevy-form.png');
+  }
+
+  &.--ford {
+    background-image: url('../images/p2/ford/ford-form.png');
+  }
+
+  &.--toyota {
+    background-image: url('../images/p2/toyota/toyota-form.png');
+  }
+
+  &.--ram {
+    background-image: url('../images/p2/ram/ram-form.png');
+  }
+
+  &.--generic {
+    background-image: url('../images/p2/generic/truck-form.png');
+  }
 }
 
 .ora-quote-content-right {
@@ -71,6 +93,10 @@
   width: 100%;
   position: relative;
   background: $ora-grey;
+
+  &.--generic {
+    background: $ora-darkgrey;
+  }
 }
 
 .ora-quote-blurb-content {
@@ -99,6 +125,30 @@
   background-size: 100%;
   background-position: center center;
 
+  // Dupe Mods
+
+  &.--chevy {
+    background-image: url('../images/p2/chevy/build-your-dream-truck-verticalish.png');
+  }
+
+  &.--ford {
+    background-image: url('../images/p2/ford/build-your-dream-ford-verticalish.png');
+  }
+
+  &.--ram {
+    background-image: url('../images/p2/ram/build-your-dream-ram-verticalish.png');
+  }
+
+  &.--toyota {
+    background-image: url('../images/p2/toyota/build-your-dream-toyota-verticalish.png');
+  }
+
+  &.--generic {
+    background-image: url('../images/p2/generic/build-your-dream-truck-verticalish.png');
+  }
+
+  // Responsive
+
   @media #{$phone-only} {
     height: 100px;
   }
@@ -111,6 +161,26 @@
   @media #{$laptop-up} {
     width: 275px;
     background-image: url('../images/p2/build-your-dream-jeep-stacked.png');
+
+    &.--chevy {
+      background-image: url('../images/p2/chevy/build-your-dream-truck-stacked.png');
+    }
+
+    &.--ford {
+      background-image: url('../images/p2/ford/build-your-dream-ford-stacked.png');
+    }
+
+    &.--ram {
+      background-image: url('../images/p2/ram/build-your-dream-ram-stacked.png');
+    }
+
+    &.--toyota {
+      background-image: url('../images/p2/toyota/build-your-dream-toyota-stacked.png');
+    }
+
+    &.--generic {
+      background-image: url('../images/p2/generic/build-your-dream-truck-stacked.png');
+    }
   }
 }
 

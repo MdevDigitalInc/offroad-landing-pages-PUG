@@ -6,6 +6,10 @@
   flex-direction: column;
   padding: vw-phone(70) 5vw vw-phone(60);
 
+  &.--generic {
+    background: $ora-grey;
+  }
+
   @media #{$tablet-up} {
     padding: vw-tablet(135) 10vw vw-tablet(80);
   }
