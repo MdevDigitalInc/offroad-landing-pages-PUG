@@ -15,24 +15,16 @@
   .ora-btn-box {
     width: 48%;
 
-    @media #{$phone-only} {
+    @media #{$phone-up} {
       width: 100%;
     }
 
     a.--lighter {
       display: inline-block;
-
-      &.--generic {
-        display: none;
-      }
     }
 
     a.--dark {
       display: none;
-
-      &.--generic {
-        display: inline-block;
-      }
     }
 
     @media #{$laptop-up} {
@@ -48,10 +40,6 @@
 
       a.--dark {
         display: inline-block;
-
-        &.--generic {
-          display: none;
-        }
       }
     }
 
